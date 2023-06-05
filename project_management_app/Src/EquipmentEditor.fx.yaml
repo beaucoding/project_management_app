@@ -557,7 +557,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         FUEL_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct('Fuel Types', Name)
+            AllowedValues: =Distinct('Fuel Types', Fuel)
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="FUEL"
@@ -647,7 +647,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         TYPE_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct('Equipment Sizes', Type)
+            AllowedValues: =Distinct('Equipment Types', Type)
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="TYPE"

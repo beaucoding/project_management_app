@@ -1,0 +1,94 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_equipmenttypeses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_equipmenttypes",
+    "Name": "Equipment Types",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_equipmenttypes_AsyncOperations": "System Jobs",
+      "cr8aa_equipmenttypes_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_equipmenttypes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_equipmenttypes_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_equipmenttypes_ProcessSession": "Process Sessions",
+      "cr8aa_equipmenttypes_SyncErrors": "Sync Errors",
+      "cr8aa_equipmenttypesid": "Equipment Types",
+      "cr8aa_name": "Type",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Equipment Types",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Equipment Types (Views)",
+    "Name": "_cr8aa_equipmenttypes_views",
+    "RelatedEntityName": "Equipment Types",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3a0f0696-2b90-495b-9fab-6b289d45e9ed": "Inactive Equipment Types",
+      "55a73771-7ec8-4ef0-b5d5-4721e233b976": "Active Equipment Types",
+      "9e8da508-bb02-4bc7-9486-54260303143b": "Equipment Types Advanced Find View",
+      "ab13239b-864c-4b9c-8f6b-8243858ce342": "Equipment Types Associated View",
+      "b41a7080-49bb-4377-b150-ce868d2a14fa": "Equipment Types Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Equipment Types)",
+    "Name": "cr8aa_equipmenttypes_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Equipment Types"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Equipment Types",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Equipment Types)",
+    "Name": "cr8aa_equipmenttypes_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Equipment Types"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Equipment Types",
+    "Type": "OptionSetInfo"
+  }
+]
