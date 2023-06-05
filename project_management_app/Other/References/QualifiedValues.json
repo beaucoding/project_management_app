@@ -6,6 +6,13 @@
       "Values": {
         "Information": "ba6522af-e71b-df11-aa01-00155d2a9006"
       }
+    },
+    {
+      "Kind": "default.cds_cr8aa_fueltypes_forms",
+      "Namespace": "Fuel Types (Forms)",
+      "Values": {
+        "Information": "0e2f8276-fb37-4249-a014-efe5646a7552"
+      }
     }
   ]
 }

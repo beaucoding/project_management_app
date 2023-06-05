@@ -103,7 +103,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         FUEL_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct(Table1, FUEL)
+            AllowedValues: =Distinct(Fuel Types, NAME)
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="FUEL"
