@@ -49,15 +49,11 @@ Screen1 As screen:
         Y: =263
         ZIndex: =3
 
-    Form1 As form:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Width: =640
-        Y: =631
-        ZIndex: =4
-
     PenInput1 As inkControl:
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
+        Height: =640
+        Width: =328
         X: =136
         Y: =435
         ZIndex: =5
