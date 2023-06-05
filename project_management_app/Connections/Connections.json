@@ -68,6 +68,13 @@
       }
     },
     "datasets": {
+      "b!n60nKaZc202HDnAOUmrYgzBHXOOiZyVGv5NVDrM1E6xWZItNU30aSZMhGGm-Gwh3.015DYJ54JIMMAZ2ZDXTZBK5YA7KTBZLCBK": {
+        "dataSources": {
+          "Table1": {
+            "tableName": "Table1"
+          }
+        }
+      },
       "b!n60nKaZc202HDnAOUmrYgzBHXOOiZyVGv5NVDrM1E6xWZItNU30aSZMhGGm-Gwh3.015DYJ54NN6GKKZ7HAGVFJ2UJ4E7OMW7FN": {
         "dataSources": {
           "EMPLOYEE_MASTER": {
@@ -77,7 +84,8 @@
       }
     },
     "dataSources": [
-      "EMPLOYEE_MASTER"
+      "EMPLOYEE_MASTER",
+      "Table1"
     ],
     "dependencies": {
       "fileSource": "9c777de3-375f-47f9-9168-cc6a8c34b31e"

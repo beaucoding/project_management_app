@@ -1,0 +1,45 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-03-21T17:10:47.3290000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "BRAND": "BRAND",
+      "Column10": "Column10",
+      "Column11": "Column11",
+      "Column12": "Column12",
+      "Column13": "Column13",
+      "Column14": "Column14",
+      "Column15": "Column15",
+      "Column16": "Column16",
+      "Column17": "Column17",
+      "Column18": "Column18",
+      "Column19": "Column19",
+      "Column20": "Column20",
+      "Column21": "Column21",
+      "Column22": "Column22",
+      "Column23": "Column23",
+      "Column24": "Column24",
+      "Column25": "Column25",
+      "Column26": "Column26",
+      "FUEL": "FUEL",
+      "img": "img",
+      "MAINTENANCE": "MAINTENANCE",
+      "NAME": "NAME",
+      "NOTES": "NOTES",
+      "OWNER": "OWNER",
+      "SIZE": "SIZE",
+      "TYPE": "TYPE"
+    },
+    "DatasetName": "b!n60nKaZc202HDnAOUmrYgzBHXOOiZyVGv5NVDrM1E6xWZItNU30aSZMhGGm-Gwh3.015DYJ54JIMMAZ2ZDXTZBK5YA7KTBZLCBK",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Table1",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
