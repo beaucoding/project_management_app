@@ -2,6 +2,10 @@
   "DatasetName": "default.cds",
   "EntityName": "Fuel Types",
   "InstanceUrl": "https://org3d6083a9.crm.dynamics.com/",
+  "LocalReferenceDSJson": {
+    "entitySetName": "cr8aa_fueltypeses",
+    "logicalName": "cr8aa_fueltypes"
+  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org3d6083a9.crm.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('cr8aa_fueltypes')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
