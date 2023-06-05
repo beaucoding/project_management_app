@@ -616,7 +616,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"APPLICATOR\",\"Series1\":\"ARCHEWILD_EMAIL\",\"Series2\":\"EMP_ACTIVE\",\"Series3\":\"EMP_DEPT\",\"Series4\":\"EMP_EMAIL\",\"Series5\":\"EMP_MANAGER\",\"Series6\":\"EMP_MOBILE\",\"Series7\":\"EMP_NAME\",\"Series8\":\"EMP_PIC\",\"Series9\":\"EMP_ROLE\"}",
+          "NameMap": "{\"Labels\":\"EMP_MANAGER\",\"Series1\":\"ARCHEWILD_EMAIL\",\"Series2\":\"EMP_ACTIVE\",\"Series3\":\"EMP_DEPT\",\"Series4\":\"EMP_EMAIL\",\"Series5\":\"EMP_MANAGER\",\"Series6\":\"EMP_MOBILE\",\"Series7\":\"EMP_NAME\",\"Series8\":\"EMP_PIC\",\"Series9\":\"EMP_ROLE\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
