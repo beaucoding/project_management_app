@@ -467,7 +467,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         OWNER_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct('Equipment Sizes', Type) 
+            AllowedValues: =Distinct('Equipment Sizes', 'EQ Size') 
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OWNER"
