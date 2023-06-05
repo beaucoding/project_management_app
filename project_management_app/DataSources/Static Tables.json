@@ -9,6 +9,8 @@
     "Name": "Static Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr8aa_eqfuel": "EQfuel",
+      "cr8aa_eqmaintenance": "EQmaintenance",
       "cr8aa_eqtype": "EQtype",
       "cr8aa_equipmentsizes_AsyncOperations": "System Jobs",
       "cr8aa_equipmentsizes_BulkDeleteFailures": "Bulk Delete Failures",
@@ -19,7 +21,7 @@
       "cr8aa_equipmentsizes_ProcessSession": "Process Sessions",
       "cr8aa_equipmentsizes_SyncErrors": "Sync Errors",
       "cr8aa_equipmentsizesid": "Equipment Sizes",
-      "cr8aa_name": "EQ Size",
+      "cr8aa_name": "Row Number",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
