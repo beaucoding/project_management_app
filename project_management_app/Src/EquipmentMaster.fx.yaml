@@ -1,4 +1,4 @@
-Screen1 As screen:
+EquipmentMaster As screen:
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
@@ -129,4 +129,21 @@ Screen1 As screen:
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: =NewForm(EquipmentEdit); Navigate(EquipmentEditor); 
+        Size: =24
+        Text: ="Add"
+        Width: =280
+        X: =320
+        Y: =1033
+        ZIndex: =6
 
