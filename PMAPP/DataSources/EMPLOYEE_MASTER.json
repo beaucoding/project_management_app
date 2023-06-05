@@ -1,0 +1,34 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-03-21T17:10:47.3290000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "APPLICATOR": "APPLICATOR",
+      "ARCHEWILD_EMAIL": "ARCHEWILD_EMAIL",
+      "EMP_ACTIVE": "EMP_ACTIVE",
+      "EMP_DEPT": "EMP_DEPT",
+      "EMP_EMAIL": "EMP_EMAIL",
+      "EMP_MANAGER": "EMP_MANAGER",
+      "EMP_MOBILE": "EMP_MOBILE",
+      "EMP_NAME": "EMP_NAME",
+      "EMP_PIC": "EMP_PIC",
+      "EMP_ROLE": "EMP_ROLE",
+      "EMP_SCHEDULE": "EMP_SCHEDULE",
+      "EMP_TITLE": "EMP_TITLE",
+      "EMP_TS": "EMP_TS",
+      "KEY": "KEY",
+      "PERCENTAGE": "PERCENTAGE"
+    },
+    "DatasetName": "b!n60nKaZc202HDnAOUmrYgzBHXOOiZyVGv5NVDrM1E6xWZItNU30aSZMhGGm-Gwh3.015DYJ54NN6GKKZ7HAGVFJ2UJ4E7OMW7FN",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "EMPLOYEE_MASTER",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

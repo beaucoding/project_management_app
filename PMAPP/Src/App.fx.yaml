@@ -1,0 +1,15 @@
+App As appinfo:
+    BackEnabled: =true
+    ConfirmExit: =true
+    OnStart: |-
+        =Set(deptEnum, 
+            {ARCHEWILD:"ARCHEWILD", WILDLAWN: "WILDLAWN", NURSERY:"NURSERY", CXO: "CXO"}
+        )
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
