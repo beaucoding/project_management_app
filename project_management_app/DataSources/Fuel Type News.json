@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_fueltypenew",
+    "MaxGetRowsCount": 2000,
     "Name": "Fuel Type News",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_equipmenttypes",
+    "MaxGetRowsCount": 2000,
     "Name": "Equipment Types",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
