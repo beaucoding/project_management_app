@@ -178,6 +178,20 @@
     "OverridableProperties": {},
     "Version": "2.2.2"
   },
+  "inkControl": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/inkControl",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "inkControl",
+    "OverridableProperties": {},
+    "Version": "2.2.0"
+  },
   "label": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -191,34 +205,6 @@
     "Name": "label",
     "OverridableProperties": {},
     "Version": "2.5.1"
-  },
-  "legend": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/legend",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "legend",
-    "OverridableProperties": {},
-    "Version": "2.1.0"
-  },
-  "lineChart": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/lineChart",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "lineChart",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
