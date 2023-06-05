@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 5,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -114,7 +114,7 @@
     "ManualOfflineProfileId": "",
     "Name": "PM APP",
     "OriginatingVersion": "1.330",
-    "ParserErrorCount": 5
+    "ParserErrorCount": 0
   },
   "PublishInfo": {
     "AppName": "PM APP",
