@@ -202,8 +202,8 @@
                     Size: =18
                     Text: =ThisItem.EMP_MOBILE
                     Width: =378
-                    X: =135
-                    Y: =515
+                    X: =134
+                    Y: =491
                     ZIndex: =6
 
     Icon1 As icon.Trash:

@@ -1380,97 +1380,6 @@
                 Y: =DataCardKey15.Y
                 ZIndex: =4
 
-        EMP_ACTIVE_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct(EMPLOYEE_MASTER,EMP_ACTIVE)
-            BorderColor: =RGBA(135, 190, 82, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EMP_ACTIVE"
-            Default: ="YES"
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@EMPLOYEE_MASTER],DataSourceInfo.DisplayName,"EMP_ACTIVE")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue4.Selected.Value
-            Visible: =false
-            Width: =640
-            X: =0
-            Y: =13
-            ZIndex: =1
-
-            DataCardKey3 As label:
-                AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue4 As dropdown:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(12, 126, 44, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(12, 126, 44, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                Default: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =70
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(53, 74, 36, 1)
-                Items: =Parent.AllowedValues
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(135, 190, 82, 1)
-                SelectionFill: =RGBA(12, 126, 44, 1)
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
-                ZIndex: =2
-
-            ErrorMessage9 As label:
-                AutoHeight: =true
-                Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue4.Y + DataCardValue4.Height
-                ZIndex: =3
-
-            StarVisible9 As label:
-                Align: =Align.Center
-                Color: =RGBA(135, 190, 82, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey3.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey3.Y
-                ZIndex: =4
-
         EMP_SCHEDULE_DataCard2 As typedDataCard.allowedValuesStringEditCard:
             AllowedValues: =Distinct(EMPLOYEE_MASTER,EMP_SCHEDULE)
             BorderColor: =RGBA(135, 190, 82, 1)
@@ -1560,5 +1469,96 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        EMP_ACTIVE_DataCard2 As typedDataCard.allowedValuesStringEditCard:
+            AllowedValues: =Distinct(EMPLOYEE_MASTER,EMP_ACTIVE)
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EMP_ACTIVE"
+            Default: ="YES"
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@EMPLOYEE_MASTER],DataSourceInfo.DisplayName,"EMP_ACTIVE")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue4.Selected.Value
+            Visible: =false
+            Width: =640
+            X: =0
+            Y: =13
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(12, 126, 44, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =70
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(53, 74, 36, 1)
+                Items: =Parent.AllowedValues
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(135, 190, 82, 1)
+                SelectionFill: =RGBA(12, 126, 44, 1)
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage9 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible9 As label:
+                Align: =Align.Center
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey3.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
                 ZIndex: =4
 
