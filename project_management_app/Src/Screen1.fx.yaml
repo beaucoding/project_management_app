@@ -45,9 +45,10 @@ Screen1 As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
-        Items: =SortByColumns(Table1, "NAME",SortOrder.Ascending)
+        Items: =Table1
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =true
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         Y: =256
@@ -76,7 +77,7 @@ Screen1 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: =ThisItem.BRAND
+            Text: =ThisItem.NAME
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image2.Width - 104
             X: =Image2.X + Image2.Width + 24
@@ -93,7 +94,7 @@ Screen1 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.Column10
+            Text: =ThisItem.BRAND
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2.Width
             X: =Title2.X
