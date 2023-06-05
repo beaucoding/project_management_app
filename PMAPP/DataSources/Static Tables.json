@@ -12,6 +12,7 @@
       "_ownerid_value": "Owner",
       "cr8aa_eqfuel": "EQfuel",
       "cr8aa_eqmaintenance": "EQmaintenance",
+      "cr8aa_eqownership": "EQownership",
       "cr8aa_eqtype": "EQtype",
       "cr8aa_equipmentsizes_AsyncOperations": "System Jobs",
       "cr8aa_equipmentsizes_BulkDeleteFailures": "Bulk Delete Failures",

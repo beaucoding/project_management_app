@@ -376,7 +376,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         OWNER_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct('Static Tables', EQfuel) 
+            AllowedValues: =Distinct('Static Tables', EQownership) 
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OWNER"
