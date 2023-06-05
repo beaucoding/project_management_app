@@ -20,6 +20,13 @@
       "Values": {
         "Information": "ba6522af-e71b-df11-aa01-00155d2a9006"
       }
+    },
+    {
+      "Kind": "default.cds_cr8aa_fueltypenew_forms",
+      "Namespace": "Fuel Type News (Forms)",
+      "Values": {
+        "Information": "886ce7aa-2993-40c7-9e84-964b8e3bd2f9"
+      }
     }
   ]
 }
