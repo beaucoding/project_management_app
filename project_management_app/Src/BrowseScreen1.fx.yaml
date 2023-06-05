@@ -137,10 +137,8 @@
 
     "BrowseGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         BorderColor: =RGBA(135, 190, 82, 1)
-        Height: =Parent.Height - Self.Y
-        Items: |-
-            =
-            SortByColumns(Search([@EMPLOYEE_MASTER], TextSearchBox1.Text, "EMP_NAME","EMP_MOBILE","EMP_EMAIL"), "EMP_NAME", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
+        Height: =994
+        Items: =SortByColumns(Search([@EMPLOYEE_MASTER], TextSearchBox1.Text, "EMP_NAME","EMP_MOBILE","EMP_EMAIL"), "EMP_NAME", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
         OnSelect: =Navigate(DetailScreen1, ScreenTransition.Fade)
         TemplatePadding: =0
