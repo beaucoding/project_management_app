@@ -467,7 +467,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         OWNER_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct('Static Tables', 'EQ Size') 
+            AllowedValues: =Distinct('Fuel Types', 'Fuel') 
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OWNER"
@@ -647,7 +647,7 @@ EquipmentEditor As screen:
                 ZIndex: =4
 
         TYPE_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct('Static Tables', EQtype)
+            AllowedValues: =Distinct('Equipment Types', Type)
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="TYPE"
