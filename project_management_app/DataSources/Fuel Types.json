@@ -1,22 +1,24 @@
 [
   {
     "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
-    "EntitySetName": "cr8aa_equipmenttypeses",
+    "EntitySetName": "cr8aa_fueltypeses",
     "IsHidden": false,
     "IsSampleData": false,
     "IsWritable": true,
-    "LogicalName": "cr8aa_equipmenttypes",
-    "Name": "Equipment Types",
+    "LogicalName": "cr8aa_fueltypes",
+    "Name": "Fuel Types",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
-      "cr8aa_equipmenttypes_AsyncOperations": "System Jobs",
-      "cr8aa_equipmenttypes_BulkDeleteFailures": "Bulk Delete Failures",
-      "cr8aa_equipmenttypes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
-      "cr8aa_equipmenttypes_PrincipalObjectAttributeAccesses": "Field Sharing",
-      "cr8aa_equipmenttypes_ProcessSession": "Process Sessions",
-      "cr8aa_equipmenttypes_SyncErrors": "Sync Errors",
-      "cr8aa_equipmenttypesid": "Equipment Types",
-      "cr8aa_name": "Type",
+      "cr8aa_fueltypes_AsyncOperations": "System Jobs",
+      "cr8aa_fueltypes_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_fueltypes_DuplicateBaseRecord": "Duplicate Records (cr8aa_fueltypes_DuplicateBaseRecord)",
+      "cr8aa_fueltypes_DuplicateMatchingRecord": "Duplicate Records (cr8aa_fueltypes_DuplicateMatchingRecord)",
+      "cr8aa_fueltypes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_fueltypes_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_fueltypes_ProcessSession": "Process Sessions",
+      "cr8aa_fueltypes_SyncErrors": "Sync Errors",
+      "cr8aa_fueltypesid": "Fuel Types",
+      "cr8aa_name": "Fuel",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -34,26 +36,26 @@
       "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
       "versionnumber": "Version Number"
     },
-    "PreferredName": "Equipment Types",
+    "PreferredName": "Fuel Types",
     "Type": "NativeCDSDataSourceInfo"
   },
   {
-    "DisplayName": "Equipment Types (Views)",
-    "Name": "_cr8aa_equipmenttypes_views",
-    "RelatedEntityName": "Equipment Types",
+    "DisplayName": "Fuel Types (Views)",
+    "Name": "_cr8aa_fueltypes_views",
+    "RelatedEntityName": "Fuel Types",
     "TrimmedViewName": true,
     "Type": "ViewInfo",
     "ViewInfoNameMapping": {
-      "3a0f0696-2b90-495b-9fab-6b289d45e9ed": "Inactive Equipment Types",
-      "55a73771-7ec8-4ef0-b5d5-4721e233b976": "Active Equipment Types",
-      "9e8da508-bb02-4bc7-9486-54260303143b": "Equipment Types Advanced Find View",
-      "ab13239b-864c-4b9c-8f6b-8243858ce342": "Equipment Types Associated View",
-      "b41a7080-49bb-4377-b150-ce868d2a14fa": "Equipment Types Lookup View"
+      "7f795712-20d4-4a8e-92bf-fdccd7d0beca": "Fuel Types Lookup View",
+      "961a3581-464c-4458-bfa3-d9ae74b22f2f": "Fuel Types Associated View",
+      "c6f34734-3667-43b3-ae27-3f410f89b6f8": "Fuel Types Advanced Find View",
+      "d6378e46-c3b3-4a5a-9816-cd5a6add718f": "Inactive Fuel Types",
+      "f6ab10db-5217-4c0f-8878-40c2d3056968": "Active Fuel Types"
     }
   },
   {
-    "DisplayName": "Status (Equipment Types)",
-    "Name": "cr8aa_equipmenttypes_statecode",
+    "DisplayName": "Status (Fuel Types)",
+    "Name": "cr8aa_fueltypes_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
       "1": "Inactive"
@@ -63,17 +65,17 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Equipment Types"
+        "OptionSetReferenceEntityName": "Fuel Types"
       }
     },
     "OptionSetTypeKey": "StateType",
     "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Equipment Types",
+    "RelatedEntityName": "Fuel Types",
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Equipment Types)",
-    "Name": "cr8aa_equipmenttypes_statuscode",
+    "DisplayName": "Status Reason (Fuel Types)",
+    "Name": "cr8aa_fueltypes_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"
@@ -83,12 +85,12 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Equipment Types"
+        "OptionSetReferenceEntityName": "Fuel Types"
       }
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Equipment Types",
+    "RelatedEntityName": "Fuel Types",
     "Type": "OptionSetInfo"
   }
 ]
