@@ -6,9 +6,11 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_equipmenttypes",
+    "MaxGetRowsCount": 2000,
     "Name": "Equipment Types",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr8aa_eqmaintenance": "EQmaintenance",
       "cr8aa_equipmenttypes_AsyncOperations": "System Jobs",
       "cr8aa_equipmenttypes_BulkDeleteFailures": "Bulk Delete Failures",
       "cr8aa_equipmenttypes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
