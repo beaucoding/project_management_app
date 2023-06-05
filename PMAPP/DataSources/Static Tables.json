@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_equipmentsizes",
+    "MaxGetRowsCount": 2000,
     "Name": "Static Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

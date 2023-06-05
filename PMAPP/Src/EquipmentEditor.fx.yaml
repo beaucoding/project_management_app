@@ -662,13 +662,3 @@ EquipmentEditor As screen:
         Y: =1040
         ZIndex: =2
 
-    "Icon2 As icon.'3DPrinting'":
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(135, 190, 82, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.Printing3D
-        X: =44
-        Y: =966
-        ZIndex: =3
-
