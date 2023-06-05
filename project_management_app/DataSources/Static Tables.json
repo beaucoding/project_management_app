@@ -6,10 +6,10 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_equipmentsizes",
-    "MaxGetRowsCount": 2000,
-    "Name": "Equipment Sizes",
+    "Name": "Static Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr8aa_eqtype": "EQtype",
       "cr8aa_equipmentsizes_AsyncOperations": "System Jobs",
       "cr8aa_equipmentsizes_BulkDeleteFailures": "Bulk Delete Failures",
       "cr8aa_equipmentsizes_DuplicateBaseRecord": "Duplicate Records (cr8aa_equipmentsizes_DuplicateBaseRecord)",
@@ -19,7 +19,7 @@
       "cr8aa_equipmentsizes_ProcessSession": "Process Sessions",
       "cr8aa_equipmentsizes_SyncErrors": "Sync Errors",
       "cr8aa_equipmentsizesid": "Equipment Sizes",
-      "cr8aa_name": "Type",
+      "cr8aa_name": "EQ Size",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -37,13 +37,13 @@
       "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
       "versionnumber": "Version Number"
     },
-    "PreferredName": "Equipment Sizes",
+    "PreferredName": "Static Tables",
     "Type": "NativeCDSDataSourceInfo"
   },
   {
-    "DisplayName": "Equipment Sizes (Views)",
+    "DisplayName": "Static Tables (Views)",
     "Name": "_cr8aa_equipmentsizes_views",
-    "RelatedEntityName": "Equipment Sizes",
+    "RelatedEntityName": "Static Tables",
     "TrimmedViewName": true,
     "Type": "ViewInfo",
     "ViewInfoNameMapping": {
@@ -55,7 +55,7 @@
     }
   },
   {
-    "DisplayName": "Status (Equipment Sizes)",
+    "DisplayName": "Status (Static Tables)",
     "Name": "cr8aa_equipmentsizes_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
@@ -66,16 +66,16 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Equipment Sizes"
+        "OptionSetReferenceEntityName": "Static Tables"
       }
     },
     "OptionSetTypeKey": "StateType",
     "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Equipment Sizes",
+    "RelatedEntityName": "Static Tables",
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Equipment Sizes)",
+    "DisplayName": "Status Reason (Static Tables)",
     "Name": "cr8aa_equipmentsizes_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
@@ -86,12 +86,12 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Equipment Sizes"
+        "OptionSetReferenceEntityName": "Static Tables"
       }
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Equipment Sizes",
+    "RelatedEntityName": "Static Tables",
     "Type": "OptionSetInfo"
   }
 ]

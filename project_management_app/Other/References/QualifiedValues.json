@@ -34,6 +34,13 @@
       "Values": {
         "Information": "ba6522af-e71b-df11-aa01-00155d2a9006"
       }
+    },
+    {
+      "Kind": "default.cds_cr8aa_equipmentsizes_forms",
+      "Namespace": "Static Tables (Forms)",
+      "Values": {
+        "Information": "6dcfadbc-e157-4e41-8e5b-fd2d0881847c"
+      }
     }
   ]
 }
