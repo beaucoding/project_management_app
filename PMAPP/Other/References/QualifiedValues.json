@@ -1,6 +1,13 @@
 {
   "QualifiedValues": [
     {
+      "Kind": "default.cds_cr8aa_equipmenttypes_forms",
+      "Namespace": "Equipment Types (Forms)",
+      "Values": {
+        "Information": "73bab7c7-57f9-4542-b2d8-e3a85b3cd89f"
+      }
+    },
+    {
       "Kind": "default.cds_cr8aa_fueltypes_forms",
       "Namespace": "Fuel Types (Forms)",
       "Values": {
@@ -12,13 +19,6 @@
       "Namespace": "Static Tables (Forms)",
       "Values": {
         "Information": "6dcfadbc-e157-4e41-8e5b-fd2d0881847c"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8aa_equipmenttypes_forms",
-      "Namespace": "Equipment Types (Forms)",
-      "Values": {
-        "Information": "73bab7c7-57f9-4542-b2d8-e3a85b3cd89f"
       }
     },
     {
