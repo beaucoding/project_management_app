@@ -1,4 +1,4 @@
-"EditScreen1 As screen.'phoneDetailEditLayout_ver3.0'":
+"'Employee Editor' As screen.'phoneDetailEditLayout_ver3.0'":
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
@@ -66,7 +66,7 @@
         Height: =Parent.Height - EditForm1.Y
         Item: =BrowseGallery1.Selected
         NumberOfColumns: =1
-        OnSuccess: =Navigate(DetailScreen1,ScreenTransition.Cover)
+        OnSuccess: =Navigate('Employee Details',ScreenTransition.Cover)
         Width: =Parent.Width
         Y: =RectQuickActionBar3.Height
         ZIndex: =5

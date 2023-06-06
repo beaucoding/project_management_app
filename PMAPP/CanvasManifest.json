@@ -128,11 +128,25 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "BrowseScreen1",
-    "DetailScreen1",
-    "EditScreen1",
+    "Dashboard",
+    "Employee Master",
+    "Employee Details",
+    "Employee Editor",
+    "Customer Master",
+    "Customer Details",
+    "Customer Editor",
+    "Project Master",
+    "Project Details",
+    "Project Tasks",
     "EquipmentMaster",
-    "Screen3",
-    "EquipmentEditor"
+    "EquipmentDetails",
+    "EquipmentEditor",
+    "Element Master",
+    "Element Details",
+    "Element Editor",
+    "Material Master",
+    "Material Details",
+    "Material Editor",
+    "Screen3"
   ]
 }

@@ -1,0 +1,4 @@
+"'Element Details' As screen":
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+

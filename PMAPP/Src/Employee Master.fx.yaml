@@ -1,4 +1,4 @@
-"BrowseScreen1 As screen.'phoneBrowseLayout_ver3.0'":
+"'Employee Master' As screen.'phoneBrowseLayout_ver3.0'":
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
@@ -76,7 +76,7 @@
         Fill: =RGBA(8, 88, 31, 1)
         Height: =88
         Icon: =Icon.AddUser
-        OnSelect: =NewForm(EditForm1);Navigate(EditScreen1, ScreenTransition.Cover)
+        OnSelect: =NewForm(EditForm1);Navigate('Employee Editor', ScreenTransition.Cover)
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
@@ -140,7 +140,7 @@
         Height: =994
         Items: =SortByColumns(Search([@EMPLOYEE_MASTER], TextSearchBox1.Text, "EMP_NAME","EMP_MOBILE","EMP_EMAIL"), "EMP_NAME", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
-        OnSelect: =Navigate(DetailScreen1, ScreenTransition.Fade)
+        OnSelect: =Navigate('Employee Details', ScreenTransition.Fade)
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
         Transition: =Transition.Pop
