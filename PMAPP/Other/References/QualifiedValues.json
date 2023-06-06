@@ -41,6 +41,11 @@
       "Values": {
         "Information": "ba6522af-e71b-df11-aa01-00155d2a9006"
       }
+    },
+    {
+      "Kind": "default.cds_cr8aa_table2_forms",
+      "Namespace": "table2S (Forms)",
+      "Values": {}
     }
   ]
 }
