@@ -29,6 +29,7 @@
       "cr8aa_name": "Row Number",
       "cr8aa_REF": "REF",
       "cr8aa_statickey": "STATIC KEY",
+      "cr8aa_string": "String",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",

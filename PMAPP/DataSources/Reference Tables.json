@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_referencetables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_referencetable",
+    "Name": "Reference Tables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "cr8aa_color": "Color",
+      "cr8aa_key": "KEY",
+      "cr8aa_name": "Name",
+      "cr8aa_referencetable_AsyncOperations": "System Jobs",
+      "cr8aa_referencetable_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_referencetable_connections1": "Connections (cr8aa_referencetable_connections1)",
+      "cr8aa_referencetable_connections2": "Connections (cr8aa_referencetable_connections2)",
+      "cr8aa_referencetable_DuplicateBaseRecord": "Duplicate Records (cr8aa_referencetable_DuplicateBaseRecord)",
+      "cr8aa_referencetable_DuplicateMatchingRecord": "Duplicate Records (cr8aa_referencetable_DuplicateMatchingRecord)",
+      "cr8aa_referencetable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_referencetable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_referencetable_ProcessSession": "Process Sessions",
+      "cr8aa_ReferenceTable_REF_cr8aa_EquipmentS": "Static Tables",
+      "cr8aa_referencetable_SyncErrors": "Sync Errors",
+      "cr8aa_referencetableid": "Reference Table",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Reference Tables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Reference Tables (Views)",
+    "Name": "_cr8aa_referencetable_views",
+    "RelatedEntityName": "Reference Tables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "16702fd3-c68a-4f63-8207-8b591def5b5e": "Inactive Reference Tables",
+      "4a5372e3-a588-44ad-9dbc-78e0b59fa0d8": "Reference Table Associated View",
+      "583c037b-e1b2-4f07-bba8-05d128283f7e": "Reference Table Lookup View",
+      "7e96e0c7-e3fd-4d69-aa8f-765460b73d50": "Reference Table Advanced Find View",
+      "e1103792-7ec2-4469-bfb3-96f1731fc784": "Active Reference Tables"
+    }
+  },
+  {
+    "DisplayName": "Status (Reference Tables)",
+    "Name": "cr8aa_referencetable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Reference Tables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Reference Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Reference Tables)",
+    "Name": "cr8aa_referencetable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Reference Tables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Reference Tables",
+    "Type": "OptionSetInfo"
+  }
+]
