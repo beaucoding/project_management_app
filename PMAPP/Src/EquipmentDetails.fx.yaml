@@ -5,6 +5,7 @@ EquipmentDetails As screen:
     EquipmentDetailForm As formViewer:
         BorderColor: =RGBA(135, 190, 82, 1)
         DataSource: =SortByColumns(Equipment, "cr8aa_name", SortOrder.Descending)
+        Fill: =RGBA(247, 247, 247, 1)
         Height: =1048
         Item: =EquipmentGallery.Selected
         NumberOfColumns: =2
@@ -23,38 +24,27 @@ EquipmentDetails As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =79
             Required: =false
-            Width: =318
+            Width: =636
             X: =0
             Y: =0
             ZIndex: =1
 
-            DataCardKey32 As label:
-                AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
             DataCardValue31 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 75, 125, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                Height: =50
                 PaddingLeft: =0
                 PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
+                PaddingTop: =10
+                Size: =40
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
+                Width: =606
                 X: =30
-                Y: =DataCardKey32.Y + DataCardKey32.Height + 5
+                Y: =
                 ZIndex: =2
 
         BRAND_DataCard3 As typedDataCard.textualViewCard:
@@ -76,8 +66,10 @@ EquipmentDetails As screen:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
                 Height: =48
-                Size: =21
+                PaddingLeft: =0
+                Size: =24
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -88,9 +80,10 @@ EquipmentDetails As screen:
             DataCardValue32 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(92, 92, 92, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -120,8 +113,10 @@ EquipmentDetails As screen:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
                 Height: =48
-                Size: =21
+                PaddingLeft: =0
+                Size: =24
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -132,9 +127,10 @@ EquipmentDetails As screen:
             DataCardValue38 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(92, 92, 92, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -164,8 +160,10 @@ EquipmentDetails As screen:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
                 Height: =48
-                Size: =21
+                PaddingLeft: =0
+                Size: =24
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -176,9 +174,10 @@ EquipmentDetails As screen:
             DataCardValue34 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(92, 92, 92, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -187,6 +186,53 @@ EquipmentDetails As screen:
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey35.Y + DataCardKey35.Height + 5
+                ZIndex: =2
+
+        MAINTENANCE_DataCard3 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_maintenance"
+            Default: =ThisItem.MAINTENANCE
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_maintenance")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =76
+            Required: =false
+            Width: =530
+            X: =-1
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey37 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue36 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey37.Y + DataCardKey37.Height + 5
                 ZIndex: =2
 
         FUEL_DataCard3 As typedDataCard.textualViewCard:
@@ -208,8 +254,10 @@ EquipmentDetails As screen:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
                 Height: =48
-                Size: =21
+                PaddingLeft: =0
+                Size: =24
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -220,9 +268,10 @@ EquipmentDetails As screen:
             DataCardValue35 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(92, 92, 92, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -231,50 +280,6 @@ EquipmentDetails As screen:
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey36.Y + DataCardKey36.Height + 5
-                ZIndex: =2
-
-        MAINTENANCE_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr8aa_maintenance"
-            Default: =ThisItem.MAINTENANCE
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_maintenance")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =73
-            Required: =false
-            Width: =530
-            X: =-1
-            Y: =6
-            ZIndex: =1
-
-            DataCardKey37 As label:
-                AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue36 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey37.Y + DataCardKey37.Height + 5
                 ZIndex: =2
 
         NOTES_DataCard3 As typedDataCard.textualViewCard:
@@ -296,8 +301,10 @@ EquipmentDetails As screen:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
                 Height: =48
-                Size: =21
+                PaddingLeft: =0
+                Size: =24
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -321,6 +328,13 @@ EquipmentDetails As screen:
                 Y: =DataCardKey38.Y + DataCardKey38.Height + 5
                 ZIndex: =2
 
+    RectQuickActionBar2_1 As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
     EQDetailsBack As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
         BorderColor: =RGBA(135, 190, 82, 1)
@@ -338,7 +352,7 @@ EquipmentDetails As screen:
         TabIndex: =0
         Tooltip: ="Back to list"
         Width: =88
-        ZIndex: =2
+        ZIndex: =3
 
     EQDetailsEdit As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -355,7 +369,7 @@ EquipmentDetails As screen:
         Width: =280
         X: =336
         Y: =1041
-        ZIndex: =3
+        ZIndex: =4
 
     Image1 As image:
         BorderColor: =RGBA(135, 190, 82, 1)
@@ -364,7 +378,7 @@ EquipmentDetails As screen:
         Height: =320
         Image: =EquipmentGallery.Selected.IMAGE
         Width: =320
-        X: =282
-        Y: =129
-        ZIndex: =4
+        X: =296
+        Y: =205
+        ZIndex: =5
 
