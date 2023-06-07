@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_referencetable",
+    "MaxGetRowsCount": 2000,
     "Name": "Reference Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "cr8aa_color": "Color",

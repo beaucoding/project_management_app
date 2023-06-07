@@ -27,8 +27,6 @@ EquipmentMaster As screen:
         Fill: =RGBA(12, 126, 44, 1)
         Height: =46
         Width: =633
-        X: =3
-        Y: =110
         ZIndex: =2
 
     Image1 As image:
@@ -51,7 +49,7 @@ EquipmentMaster As screen:
         OnSelect: =true
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Y: =256
+        Y: =127
         ZIndex: =5
 
         Image2 As image:
@@ -108,8 +106,10 @@ EquipmentMaster As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =60
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
+            Icon: =Icon.NextArrow
+            OnSelect: |-
+                =Select(Parent);
+                Navigate(EquipmentDetails);
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
