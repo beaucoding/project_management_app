@@ -33,7 +33,7 @@ EquipmentMaster As screen:
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
         Height: =879
-        Items: =SortByColumns(Search([@EMPLOYEE_MASTER], EQsearch.Text, "EMP_NAME","EMP_MOBILE","EMP_EMAIL"), "EMP_NAME", SortOrder.Ascending)
+        Items: =SortByColumns(Equipment, "cr8aa_name", SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =true
@@ -47,7 +47,7 @@ EquipmentMaster As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =128
-            Image: =ThisItem.img
+            Image: =ThisItem.IMAGE
             OnSelect: =Select(Parent)
             Width: =128
             X: =16

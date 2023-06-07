@@ -1,0 +1,104 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_equipments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_equipment",
+    "MaxGetRowsCount": 2000,
+    "Name": "Equipment",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_brand": "BRAND",
+      "cr8aa_equipment_AsyncOperations": "System Jobs",
+      "cr8aa_equipment_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_equipment_DuplicateBaseRecord": "Duplicate Records (cr8aa_equipment_DuplicateBaseRecord)",
+      "cr8aa_equipment_DuplicateMatchingRecord": "Duplicate Records (cr8aa_equipment_DuplicateMatchingRecord)",
+      "cr8aa_equipment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_equipment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_equipment_ProcessSession": "Process Sessions",
+      "cr8aa_equipment_SyncErrors": "Sync Errors",
+      "cr8aa_equipmentid": "Equipment",
+      "cr8aa_fuel": "FUEL",
+      "cr8aa_image": "IMAGE",
+      "cr8aa_maintenance": "MAINTENANCE",
+      "cr8aa_name": "NAME",
+      "cr8aa_notes": "NOTES",
+      "cr8aa_size": "SIZE",
+      "cr8aa_type": "TYPE",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Equipment",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Equipment (Views)",
+    "Name": "_cr8aa_equipment_views",
+    "RelatedEntityName": "Equipment",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "11af6c8f-998a-4965-ae96-c062b8fb20e7": "Equipment Advanced Find View",
+      "6cd014d2-a95c-4552-8057-1d574d3fea0d": "Equipment Lookup View",
+      "7467f711-7b29-4221-a813-0bb4ebb4b473": "Active Equipment",
+      "8a84a6ca-3713-4a73-bda7-97a6a3c249fb": "Inactive Equipment",
+      "f4bc0725-3de3-4934-99b6-fffd7fdce0b3": "Equipment Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Equipment)",
+    "Name": "cr8aa_equipment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Equipment"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Equipment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Equipment)",
+    "Name": "cr8aa_equipment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Equipment"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Equipment",
+    "Type": "OptionSetInfo"
+  }
+]

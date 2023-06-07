@@ -4,7 +4,7 @@ EquipmentDetails As screen:
 
     EquipmentDetailForm As formViewer:
         BorderColor: =RGBA(135, 190, 82, 1)
-        DataSource: =SortByColumns([@Table1],"NAME",SortOrder.Descending)
+        DataSource: =SortByColumns(Equipment, "cr8aa_name", SortOrder.Descending)
         Height: =1048
         Item: =EquipmentGallery.Selected
         NumberOfColumns: =2
@@ -13,43 +13,40 @@ EquipmentDetails As screen:
         Y: =88
         ZIndex: =1
 
-        EQname As typedDataCard.textualViewCard:
+        NAME_DataCard3 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="NAME"
+            DataField: ="cr8aa_name"
             Default: =ThisItem.NAME
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"NAME")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_name")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =79
             Required: =false
-            Width: =320
+            Width: =318
             X: =0
             Y: =0
             ZIndex: =1
 
-            EQnameKey As label:
+            DataCardKey32 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Name"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQnameValue As label:
+            DataCardValue31 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -57,46 +54,43 @@ EquipmentDetails As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =EQnameKey.Y + EQnameKey.Height + 5
+                Y: =DataCardKey32.Y + DataCardKey32.Height + 5
                 ZIndex: =2
 
-        EQbrand As typedDataCard.textualViewCard:
+        BRAND_DataCard3 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="BRAND"
+            DataField: ="cr8aa_brand"
             Default: =ThisItem.BRAND
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"BRAND")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_brand")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =47
             Required: =false
-            Width: =320
-            X: =1
-            Y: =0
+            Width: =318
+            X: =-1
+            Y: =1
             ZIndex: =1
 
-            EQbrandKey As label:
+            DataCardKey33 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Brand"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQbrandValue As label:
+            DataCardValue32 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -104,93 +98,43 @@ EquipmentDetails As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =EQbrandKey.Y + EQbrandKey.Height + 5
+                Y: =DataCardKey33.Y + DataCardKey33.Height + 5
                 ZIndex: =2
 
-        EQnotes As typedDataCard.textualViewCard:
+        TYPE_DataCard4 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="NOTES"
-            Default: =ThisItem.NOTES
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"NOTES")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =320
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            EQnotesKey As label:
-                AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
-                Height: =48
-                Size: =21
-                Text: ="Notes"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =12
-                ZIndex: =1
-
-            EQnotesValue As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =EQnotesKey.Y + EQnotesKey.Height + 5
-                ZIndex: =2
-
-        EQtype As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="TYPE"
+            DataField: ="cr8aa_type"
             Default: =ThisItem.TYPE
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"TYPE")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_type")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =58
             Required: =false
-            Width: =320
-            X: =1
-            Y: =1
+            Width: =318
+            X: =-3
+            Y: =4
             ZIndex: =1
 
-            EQtypeKey As label:
+            DataCardKey39 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Type"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQtypeValue As label:
+            DataCardValue38 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -198,46 +142,43 @@ EquipmentDetails As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =EQtypeKey.Y + EQtypeKey.Height + 5
+                Y: =DataCardKey39.Y + DataCardKey39.Height + 5
                 ZIndex: =2
 
-        EQsize As typedDataCard.textualViewCard:
+        SIZE_DataCard3 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="SIZE"
+            DataField: ="cr8aa_size"
             Default: =ThisItem.SIZE
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"SIZE")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_size")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =0
             Required: =false
-            Width: =320
-            X: =0
-            Y: =2
+            Width: =318
+            X: =-2
+            Y: =5
             ZIndex: =1
 
-            EQsizeKey As label:
+            DataCardKey35 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Size"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQsizeValue As label:
+            DataCardValue34 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -245,46 +186,43 @@ EquipmentDetails As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =EQsizeKey.Y + EQsizeKey.Height + 5
+                Y: =DataCardKey35.Y + DataCardKey35.Height + 5
                 ZIndex: =2
 
-        EQfuel As typedDataCard.textualViewCard:
+        FUEL_DataCard3 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="FUEL"
+            DataField: ="cr8aa_fuel"
             Default: =ThisItem.FUEL
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"FUEL")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_fuel")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =62
             Required: =false
-            Width: =320
-            X: =1
-            Y: =2
+            Width: =477
+            X: =0
+            Y: =6
             ZIndex: =1
 
-            EQfuelKey As label:
+            DataCardKey36 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Fuel"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQfuelValue As label:
+            DataCardValue35 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -292,46 +230,43 @@ EquipmentDetails As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =EQfuelKey.Y + EQfuelKey.Height + 5
+                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
                 ZIndex: =2
 
-        EQmaintenance As typedDataCard.textualViewCard:
+        MAINTENANCE_DataCard3 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="MAINTENANCE"
+            DataField: ="cr8aa_maintenance"
             Default: =ThisItem.MAINTENANCE
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"MAINTENANCE")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_maintenance")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =73
             Required: =false
-            Width: =320
-            X: =0
-            Y: =3
+            Width: =530
+            X: =-1
+            Y: =6
             ZIndex: =1
 
-            EQmaintenanceKey As label:
+            DataCardKey37 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Maintenance"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQmaintenanceValue As label:
+            DataCardValue36 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -339,47 +274,52 @@ EquipmentDetails As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =EQmaintenanceKey.Y + EQmaintenanceKey.Height + 5
+                Y: =DataCardKey37.Y + DataCardKey37.Height + 5
                 ZIndex: =2
 
-        EQimage As typedDataCard.textualViewCard:
+        NOTES_DataCard3 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="img"
-            Default: =ThisItem.img
+            DataField: ="cr8aa_notes"
+            Default: =ThisItem.NOTES
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"img")
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_notes")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =320
-            X: =1
-            Y: =3
+            Width: =214
+            X: =2
+            Y: =6
             ZIndex: =1
 
-            EQimageKey As label:
+            DataCardKey38 As label:
                 AutoHeight: =true
                 Color: =RGBA(135, 190, 82, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: ="Profile Picture"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            EQimageDisplay As image:
+            DataCardValue37 As label:
+                AutoHeight: =true
                 BorderColor: =RGBA(135, 190, 82, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =250
-                Image: =ThisItem.img
-                Width: =251
-                Y: =54
-                ZIndex: =3
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey38.Y + DataCardKey38.Height + 5
+                ZIndex: =2
 
     EQDetailsBack As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
@@ -416,4 +356,15 @@ EquipmentDetails As screen:
         X: =336
         Y: =1041
         ZIndex: =3
+
+    Image1 As image:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =320
+        Image: =EquipmentGallery.Selected.IMAGE
+        Width: =320
+        X: =282
+        Y: =129
+        ZIndex: =4
 
