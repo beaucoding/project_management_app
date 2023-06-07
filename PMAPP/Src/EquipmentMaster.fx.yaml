@@ -146,10 +146,3 @@ EquipmentMaster As screen:
         Y: =1022
         ZIndex: =6
 
-    Circle2 As circle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
-        X: =265
-        Y: =800
-        ZIndex: =7
-
