@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_projectmasters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_projectmaster",
+    "MaxGetRowsCount": 2000,
+    "Name": "Task Master",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "cr8aa_deliv_ref": "DELIV_REF",
+      "cr8aa_DELIV_REF_LOOKUP": "DELIV_REF_LOOKUP",
+      "cr8aa_difficulty": "DIFFICULTY",
+      "cr8aa_endby": "END BY",
+      "cr8aa_name": "TASK_NAME",
+      "cr8aa_necessary_pdays": "NECESSARY_PDAYS",
+      "cr8aa_projectmaster_Annotations": "Notes",
+      "cr8aa_projectmaster_AsyncOperations": "System Jobs",
+      "cr8aa_projectmaster_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_projectmaster_connections1": "Connections (cr8aa_projectmaster_connections1)",
+      "cr8aa_projectmaster_connections2": "Connections (cr8aa_projectmaster_connections2)",
+      "cr8aa_projectmaster_DuplicateBaseRecord": "Duplicate Records (cr8aa_projectmaster_DuplicateBaseRecord)",
+      "cr8aa_projectmaster_DuplicateMatchingRecord": "Duplicate Records (cr8aa_projectmaster_DuplicateMatchingRecord)",
+      "cr8aa_projectmaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_projectmaster_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_projectmaster_ProcessSession": "Process Sessions",
+      "cr8aa_projectmaster_SyncErrors": "Sync Errors",
+      "cr8aa_projectmasterid": "Project Master",
+      "cr8aa_startby": "START BY",
+      "cr8aa_task_description": "TASK_DESCRIPTION",
+      "cr8aa_task_keys": "TASK_KEYS",
+      "cr8aa_unit_quantity": "UNIT_QUANTITY",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Task Master",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Task Master (Views)",
+    "Name": "_cr8aa_projectmaster_views",
+    "RelatedEntityName": "Task Master",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "41e9c82e-019b-4c0f-9383-5c9fcaf76ced": "Active Project Master",
+      "9c8e3a36-bd8c-4e9e-885c-0a9049341bcb": "Inactive Project Master",
+      "c1eae67a-fcdd-4d43-8d0b-633e0c29a2fa": "Project Master Advanced Find View",
+      "dc2f683c-dce4-45af-be39-bb28063dbb80": "Project Master Associated View",
+      "f7e9bb16-95d6-4237-b1a6-8d7a5337658a": "Project Master Lookup View"
+    }
+  },
+  {
+    "DisplayName": "DIFFICULTY (Task Master)",
+    "Name": "cr8aa_projectmaster_cr8aa_difficulty",
+    "OptionSetInfoNameMapping": {
+      "1": "EASY",
+      "2": "MEDIUM",
+      "3": "HARD",
+      "4": "VERY HARD"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_difficulty",
+        "OptionSetReferenceEntityName": "Task Master"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_difficulty",
+    "RelatedEntityName": "Task Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Task Master)",
+    "Name": "cr8aa_projectmaster_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Task Master"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Task Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Task Master)",
+    "Name": "cr8aa_projectmaster_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Task Master"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Task Master",
+    "Type": "OptionSetInfo"
+  }
+]
