@@ -4,9 +4,9 @@ EquipmentEditor As screen:
 
     EquipmentEdit As form:
         BorderColor: =RGBA(135, 190, 82, 1)
-        DataSource: =Table1
+        DataSource: =Equipment
         Height: =786
-        Item: =EquipmentGallery.Selected
+        Item: =SortByColumns(Equipment, "cr8aa_name", SortOrder.Descending)
         OnSuccess: =Back();
         Width: =640
         Y: =40
@@ -18,9 +18,9 @@ EquipmentEditor As screen:
             DataField: ="NAME"
             Default: =ThisItem.NAME
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"NAME")
+            DisplayName: ="name name"     
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =Parent.Default
             MaxLength: =DataSourceInfo([@Table1], DataSourceInfo.MaxLength, "NAME")
             Required: =false
             Update: =DataCardValue17.Text
@@ -47,7 +47,7 @@ EquipmentEditor As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
-                Default: =Parent.Default
+                Default: =ThisItem.NAME
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -56,6 +56,7 @@ EquipmentEditor As screen:
                 Fill: =RGBA(0, 0, 0, 1)
                 FocusedBorderThickness: =4
                 Height: =70
+                HintText: =""
                 HoverBorderColor: =RGBA(135, 190, 82, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(53, 74, 36, 1)
@@ -474,7 +475,7 @@ EquipmentEditor As screen:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OWNER"
-            Default: =ThisItem.OWNER
+            Default: =
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"OWNER")
             Fill: =RGBA(0, 0, 0, 0)
