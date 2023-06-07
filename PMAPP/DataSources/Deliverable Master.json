@@ -1,0 +1,107 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_deliverablemasters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_deliverablemaster",
+    "MaxGetRowsCount": 2000,
+    "Name": "Deliverable Master",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_customer_ref": "CUSTOMER_REF",
+      "cr8aa_deliv_key": "DELIV_KEY",
+      "cr8aa_deliv_value": "DELIV_VALUE",
+      "cr8aa_deliverablemaster_AsyncOperations": "System Jobs",
+      "cr8aa_deliverablemaster_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_DeliverableMaster_DELIV_REF_LOOKUP_": "Task Master",
+      "cr8aa_deliverablemaster_DuplicateBaseRecord": "Duplicate Records (cr8aa_deliverablemaster_DuplicateBaseRecord)",
+      "cr8aa_deliverablemaster_DuplicateMatchingRecord": "Duplicate Records (cr8aa_deliverablemaster_DuplicateMatchingRecord)",
+      "cr8aa_deliverablemaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_deliverablemaster_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_deliverablemaster_ProcessSession": "Process Sessions",
+      "cr8aa_deliverablemaster_SyncErrors": "Sync Errors",
+      "cr8aa_deliverablemasterid": "Deliverable Master",
+      "cr8aa_end_date": "END_DATE",
+      "cr8aa_given_pdays": "GIVEN_PDAYS",
+      "cr8aa_name": "DELIV_NAME",
+      "cr8aa_project_ref": "PROJECT_REF",
+      "cr8aa_ProjectMaster1_cr8aa_DeliverableMas": "Project Master",
+      "cr8aa_start_date": "START_DATE",
+      "cr8aa_zone_ref": "ZONE_REF",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Deliverable Master",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Deliverable Master (Views)",
+    "Name": "_cr8aa_deliverablemaster_views",
+    "RelatedEntityName": "Deliverable Master",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "011afcbe-93a8-44c3-bac0-9f72346018c7": "Deliverable Master Lookup View",
+      "0903bf3a-67db-444a-b4c6-e99c76ad7623": "Deliverable Master Associated View",
+      "0bccf6f5-eef4-45a7-9dbf-ec35a0d30912": "Active Deliverable Master",
+      "502af798-7f01-407d-9ea4-f9bd0d66581e": "Inactive Deliverable Master",
+      "a4a7f5a4-dbaa-4316-a5e2-97fd1b19fcea": "Deliverable Master Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Deliverable Master)",
+    "Name": "cr8aa_deliverablemaster_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Deliverable Master"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Deliverable Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Deliverable Master)",
+    "Name": "cr8aa_deliverablemaster_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Deliverable Master"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Deliverable Master",
+    "Type": "OptionSetInfo"
+  }
+]

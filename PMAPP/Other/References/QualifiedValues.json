@@ -15,6 +15,13 @@
       }
     },
     {
+      "Kind": "default.cds_cr8aa_equipment_forms",
+      "Namespace": "Equipment (Forms)",
+      "Values": {
+        "Information": "cc1ff39e-f963-45ea-9445-e884a045c6dc"
+      }
+    },
+    {
       "Kind": "default.cds_cr8aa_equipmenttypes_forms",
       "Namespace": "Equipment Types (Forms)",
       "Values": {
@@ -55,10 +62,24 @@
       "Values": {}
     },
     {
-      "Kind": "default.cds_cr8aa_equipment_forms",
-      "Namespace": "Equipment (Forms)",
+      "Kind": "default.cds_cr8aa_deliverablemaster_forms",
+      "Namespace": "Deliverable Master (Forms)",
       "Values": {
-        "Information": "cc1ff39e-f963-45ea-9445-e884a045c6dc"
+        "Information": "c76e5334-fe1f-411e-8439-9f269b8e0e6e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_projectmaster1_forms",
+      "Namespace": "Project Master_1 (Forms)",
+      "Values": {
+        "Information": "8666b2c7-c220-466b-a36e-53464e9a910f"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_projectmaster_forms",
+      "Namespace": "Task Master (Forms)",
+      "Values": {
+        "Information": "ca282f83-2b73-4cad-9f95-c91fa55b1295"
       }
     }
   ]
