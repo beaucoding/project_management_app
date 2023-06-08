@@ -7,7 +7,7 @@ EquipmentEditor As screen:
         DataSource: =Equipment
         Height: =786
         Item: =EquipmentGallery.Selected
-        OnSuccess: =Back();
+        OnSuccess: =Navigate(EquipmentDetails);
         Width: =640
         Y: =40
         ZIndex: =1
@@ -846,7 +846,7 @@ EquipmentEditor As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
-        OnSelect: =SubmitForm(EquipmentEdit); Navigate(EquipmentMaster);
+        OnSelect: =SubmitForm(EquipmentEdit);
         Size: =24
         Text: ="Submit"
         Width: =280

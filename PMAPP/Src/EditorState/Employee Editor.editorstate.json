@@ -15828,7 +15828,14 @@
         "HoverBorderColor",
         "FocusedBorderColor",
         "ZIndex",
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ResetForm(EditForm1);Back()",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PaddingLeft",
         "PaddingRight",
         "PaddingTop",
