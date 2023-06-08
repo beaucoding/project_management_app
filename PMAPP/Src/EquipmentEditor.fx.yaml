@@ -6,7 +6,7 @@ EquipmentEditor As screen:
         BorderColor: =RGBA(135, 190, 82, 1)
         DataSource: =Equipment
         Height: =786
-        Item: =SortByColumns(Equipment, "cr8aa_name", SortOrder.Descending)
+        Item: =EquipmentGallery.Selected
         OnSuccess: =Back();
         Width: =640
         Y: =40
@@ -18,9 +18,10 @@ EquipmentEditor As screen:
             DataField: ="NAME"
             Default: =ThisItem.NAME
             DisplayMode: =Parent.DisplayMode
-            DisplayName: ="name name"     
+            DisplayName: ="Name"
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Default
+            Height: |
+                =
             MaxLength: =DataSourceInfo([@Table1], DataSourceInfo.MaxLength, "NAME")
             Required: =false
             Update: =DataCardValue17.Text
@@ -36,7 +37,7 @@ EquipmentEditor As screen:
                 Font: =Font.'Lato Black'
                 Height: =48
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -47,7 +48,7 @@ EquipmentEditor As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
-                Default: =ThisItem.NAME
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -748,7 +749,7 @@ EquipmentEditor As screen:
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="img"
-            Default: =ThisItem.img
+            Default: =ThisItem.IMAGE
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Table1],DataSourceInfo.DisplayName,"img")
             Fill: =RGBA(0, 0, 0, 0)
@@ -845,7 +846,7 @@ EquipmentEditor As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
-        OnSelect: =SubmitForm(EquipmentEdit);Back();
+        OnSelect: =SubmitForm(EquipmentEdit); Navigate(EquipmentMaster);
         Size: =24
         Text: ="Submit"
         Width: =280

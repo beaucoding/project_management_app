@@ -1,10 +1,17 @@
 {
   "QualifiedValues": [
     {
-      "Kind": "default.cds_cr8aa_equipmentsizes_forms",
-      "Namespace": "Static Tables (Forms)",
+      "Kind": "default.cds_cr8aa_deliverablemaster_forms",
+      "Namespace": "Deliverable Master (Forms)",
       "Values": {
-        "Information": "6dcfadbc-e157-4e41-8e5b-fd2d0881847c"
+        "Information": "c76e5334-fe1f-411e-8439-9f269b8e0e6e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_equipment_forms",
+      "Namespace": "Equipment (Forms)",
+      "Values": {
+        "Information": "cc1ff39e-f963-45ea-9445-e884a045c6dc"
       }
     },
     {
@@ -12,6 +19,20 @@
       "Namespace": "Reference Tables (Forms)",
       "Values": {
         "Information": "76d70f2e-0215-4908-b2c7-a7bdce993648"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_equipmentsizes_forms",
+      "Namespace": "Static Tables (Forms)",
+      "Values": {
+        "Information": "6dcfadbc-e157-4e41-8e5b-fd2d0881847c"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_projectmaster_forms",
+      "Namespace": "Task Master (Forms)",
+      "Values": {
+        "Information": "ca282f83-2b73-4cad-9f95-c91fa55b1295"
       }
     },
     {
@@ -53,13 +74,6 @@
       "Kind": "default.cds_cr8aa_table2_forms",
       "Namespace": "table2S (Forms)",
       "Values": {}
-    },
-    {
-      "Kind": "default.cds_cr8aa_equipment_forms",
-      "Namespace": "Equipment (Forms)",
-      "Values": {
-        "Information": "cc1ff39e-f963-45ea-9445-e884a045c6dc"
-      }
     }
   ]
 }
