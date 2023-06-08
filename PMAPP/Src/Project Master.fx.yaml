@@ -199,10 +199,3 @@
         Y: =12
         ZIndex: =10
 
-    Rectangle5 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
-        X: =199
-        Y: =788
-        ZIndex: =11
-
