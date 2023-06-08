@@ -27,13 +27,13 @@
         Size: =28
         Text: ="Project Master"
         Width: =304
-        X: =174
+        X: =69
         Y: =9
         ZIndex: =3
 
     ProjectDetailsBack As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(95, 133, 57, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -293,7 +293,7 @@
             Height: =93
             Required: =false
             Width: =318
-            X: =1
+            X: =0
             Y: =6
             ZIndex: =1
 
@@ -337,10 +337,10 @@
             DisplayMode: =DisplayMode.View
             DisplayName: ="Description"
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =399
+            Height: =309
             Required: =false
-            Width: =265
-            X: =2
+            Width: =424
+            X: =1
             Y: =6
             ZIndex: =1
 
@@ -566,6 +566,8 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Sync
+        PaddingLeft: =5
+        PaddingRight: =5
         X: =478
         Y: =12
         ZIndex: =17
