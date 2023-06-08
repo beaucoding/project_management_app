@@ -2,34 +2,23 @@
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
-    "EquipmentGallery_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+    "ProjectGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
-        Height: =835
+        Height: =855
         Items: =SortByColumns(Search(Projects, ProjectSearch.Text, "cr8aa_name","cr8aa_manager"), "cr8aa_name", SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =true
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Y: =198
-        ZIndex: =1
+        Y: =178
+        ZIndex: =2
 
-        EQGalleryImage_1 As image:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =128
-            Image: =EquipmentGallery.Selected.IMAGE
-            OnSelect: =Select(Parent)
-            Width: =128
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        EQGalleryName_1 As label:
+        ProjectGalleryName As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Lato Black'
             FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -40,15 +29,16 @@
             Size: =20
             Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - EQGalleryImage_1.Width - 104
-            X: =EQGalleryImage_1.X + EQGalleryImage_1.Width + 24
-            Y: =44
+            Width: =178
+            X: =62
+            Y: =26
             ZIndex: =2
 
-        EQGalleryType_1 As label:
+        ProjectGalleryManager As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =Self.Size * 1.8
+            Font: =Font.Lato
+            Height: =26
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -57,12 +47,12 @@
             Size: =18
             Text: =ThisItem.Manager
             VerticalAlign: =VerticalAlign.Top
-            Width: =EQGalleryName_1.Width
-            X: =EQGalleryName_1.X
-            Y: =EQGalleryName_1.Y + EQGalleryName_1.Height + 4
+            Width: =105
+            X: =120
+            Y: =60
             ZIndex: =3
 
-        EQGalleryArrow_1 As icon.ChevronRight:
+        ProjectGalleryArrow As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(135, 190, 82, 1)
             Color: =RGBA(135, 190, 82, 1)
@@ -72,7 +62,7 @@
             Icon: =Icon.NextArrow
             OnSelect: |-
                 =Select(Parent);
-                Navigate('Project Details');
+                Navigate('Project Details', ScreenTransition.UnCover);
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -84,7 +74,7 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        EQGallerySeperator_1 As rectangle:
+        ProjectGallerySeperator As rectangle:
             BorderColor: =RGBA(135, 190, 82, 1)
             Fill: =RGBA(135, 190, 82, 1)
             Height: =1
@@ -92,6 +82,29 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
+
+        Label5 As label:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Lato Black'
+            Height: =26
+            PaddingBottom: =0
+            PaddingLeft: =0
+            Size: =18
+            Text: ="PM -"
+            Width: =58
+            X: =62
+            Y: =60
+            ZIndex: =6
+
+        ProjectStatusIndicator As rectangle:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =146
+            OnSelect: =Select(Parent)
+            Width: =10
+            ZIndex: =7
 
     ProjectSearch As text:
         BorderColor: =RGBA(135, 190, 82, 1)
@@ -103,7 +116,7 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
-        Height: =70
+        Height: =55
         HoverBorderColor: =RGBA(135, 190, 82, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(53, 74, 36, 1)
@@ -111,24 +124,24 @@
         Width: =560
         X: =66
         Y: =100
-        ZIndex: =2
+        ZIndex: =3
 
-    RectQuickActionBar2_2 As rectangle:
+    ProjectMasterHeader As rectangle:
         BorderColor: =RGBA(135, 190, 82, 1)
         Fill: =RGBA(12, 126, 44, 1)
         Height: =88
         Width: =Parent.Width
-        ZIndex: =3
-
-    RectQuickActionBar2_3 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
-        Height: =16
-        Width: =Parent.Width
-        Y: =182
         ZIndex: =4
 
-    Icon3 As icon.Search:
+    ProjectMasterRect As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Height: =10
+        Width: =Parent.Width
+        Y: =168
+        ZIndex: =5
+
+    ProjectMasterSearchIcon As icon.Search:
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(135, 190, 82, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -137,20 +150,52 @@
         Icon: =Icon.Search
         Width: =40
         X: =14
-        Y: =115
-        ZIndex: =5
+        Y: =106
+        ZIndex: =6
 
-    Label1_1 As label:
+    ProjectMasterLabel As label:
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Lato Black'
         Height: =70
-        Size: =24
+        Size: =28
         Text: ="Project Master"
         Width: =304
-        X: =174
+        X: =78
         Y: =9
-        ZIndex: =6
+        ZIndex: =7
+
+    ProjectMasterAddIcon As icon.Add:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(237, 237, 237, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Add
+        X: =562
+        Y: =12
+        ZIndex: =8
+
+    ProjectMasterSyncIcon As icon.Sync:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(237, 237, 237, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =52
+        Icon: =Icon.Sync
+        Width: =52
+        X: =494
+        Y: =18
+        ZIndex: =9
+
+    ProjectMasterMenuIcon As icon.Hamburger:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(237, 237, 237, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Hamburger
+        X: =14
+        Y: =12
+        ZIndex: =10
 

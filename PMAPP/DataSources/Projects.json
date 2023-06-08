@@ -10,6 +10,7 @@
     "Name": "Projects",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr8aa_active": "Active",
       "cr8aa_allocatedpdays": "AllocatedPdays",
       "cr8aa_customerkey": "CustomerKey",
       "cr8aa_description": "Description",
