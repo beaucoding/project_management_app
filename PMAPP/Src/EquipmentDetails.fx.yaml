@@ -87,7 +87,7 @@ EquipmentDetails As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
+                Text: =ThisItem.BRAND
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey33.Y + DataCardKey33.Height + 5

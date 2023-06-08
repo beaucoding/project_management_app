@@ -36,6 +36,13 @@
       }
     },
     {
+      "Kind": "default.cds_cr8aa_projects_forms",
+      "Namespace": "Projects (Forms)",
+      "Values": {
+        "Information": "bacfd432-dc05-4eeb-8aaf-ec24d284a241"
+      }
+    },
+    {
       "Kind": "default.cds_cr8aa_equipmenttypes_forms",
       "Namespace": "Equipment Types (Forms)",
       "Values": {
@@ -74,13 +81,6 @@
       "Kind": "default.cds_cr8aa_table2_forms",
       "Namespace": "table2S (Forms)",
       "Values": {}
-    },
-    {
-      "Kind": "default.cds_cr8aa_projects_forms",
-      "Namespace": "Projects (Forms)",
-      "Values": {
-        "Information": "bacfd432-dc05-4eeb-8aaf-ec24d284a241"
-      }
     }
   ]
 }

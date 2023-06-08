@@ -846,7 +846,7 @@ EquipmentEditor As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
-        OnSelect: =SubmitForm(EquipmentEdit);
+        OnSelect: =SubmitForm(EquipmentEdit);Back();
         Size: =24
         Text: ="Submit"
         Width: =280
