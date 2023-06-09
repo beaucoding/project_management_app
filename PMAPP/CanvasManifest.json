@@ -140,6 +140,7 @@
     "EquipmentMaster",
     "EquipmentDetails",
     "EquipmentEditor",
-    "Screen1"
+    "Screen1",
+    "CustomerDetails"
   ]
 }

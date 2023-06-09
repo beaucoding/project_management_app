@@ -1,0 +1,144 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_customermasters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_customermaster",
+    "Name": "Customer Master",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "cr8aa_cust_active": "CUST_ACTIVE",
+      "cr8aa_cust_address": "CUST_ADDRESS",
+      "cr8aa_cust_businessline": "CUST_BUSINESSLINE",
+      "cr8aa_cust_key": "CUST_KEY",
+      "cr8aa_cust_note": "CUST_NOTE",
+      "cr8aa_cust_phone": "CUST_PHONE",
+      "cr8aa_cust_plants": "CUST_PLANTS",
+      "cr8aa_customermaster_Annotations": "Notes",
+      "cr8aa_customermaster_AsyncOperations": "System Jobs",
+      "cr8aa_customermaster_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_customermaster_connections1": "Connections (cr8aa_customermaster_connections1)",
+      "cr8aa_customermaster_connections2": "Connections (cr8aa_customermaster_connections2)",
+      "cr8aa_customermaster_DuplicateBaseRecord": "Duplicate Records (cr8aa_customermaster_DuplicateBaseRecord)",
+      "cr8aa_customermaster_DuplicateMatchingRecord": "Duplicate Records (cr8aa_customermaster_DuplicateMatchingRecord)",
+      "cr8aa_customermaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_customermaster_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_customermaster_ProcessSession": "Process Sessions",
+      "cr8aa_customermaster_SyncErrors": "Sync Errors",
+      "cr8aa_customermasterid": "Customer Master",
+      "cr8aa_name": "CUST_NAME",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Customer Master",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Customer Master (Views)",
+    "Name": "_cr8aa_customermaster_views",
+    "RelatedEntityName": "Customer Master",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "20d5b129-7530-41bb-802f-4dffc33420da": "Inactive Customer Master",
+      "2e4515c1-93e0-4400-9587-acb0ef6143ca": "Customer Master Advanced Find View",
+      "6c624bda-9351-4640-bcbb-63131886f122": "Active Customer Master",
+      "77c34e43-68c9-4a45-a46b-5eeca615c70e": "Customer Master Associated View",
+      "ddfb1a51-b75b-40e8-90d1-6aaf4ccbeb24": "Customer Master Lookup View"
+    }
+  },
+  {
+    "DisplayName": "CUST_ACTIVE (Customer Master)",
+    "Name": "cr8aa_customermaster_cr8aa_cust_active",
+    "OptionSetInfoNameMapping": {
+      "468450000": "TRUE",
+      "468450001": "FALSE"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_cust_active",
+        "OptionSetReferenceEntityName": "Customer Master"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_cust_active",
+    "RelatedEntityName": "Customer Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "CUST_PLANTS (Customer Master)",
+    "Name": "cr8aa_customermaster_cr8aa_cust_plants",
+    "OptionSetInfoNameMapping": {
+      "468450000": "TRUE",
+      "468450001": "FALSE"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_cust_plants",
+        "OptionSetReferenceEntityName": "Customer Master"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_cust_plants",
+    "RelatedEntityName": "Customer Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Customer Master)",
+    "Name": "cr8aa_customermaster_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Customer Master"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Customer Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Customer Master)",
+    "Name": "cr8aa_customermaster_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Customer Master"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Customer Master",
+    "Type": "OptionSetInfo"
+  }
+]

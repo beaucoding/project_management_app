@@ -1,0 +1,468 @@
+CustomerDetails As screen:
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+
+    CustomerView As formViewer:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DataSource: ='Customer Master'
+        Height: =515
+        Item: =LookUp('Customer Master', CUST_KEY = ProjectGallery.Selected.CUST_REF)
+        NumberOfColumns: =2
+        Width: =640
+        Y: =63
+        ZIndex: =1
+
+        CUST_ACTIVE_DataCard1 As typedDataCard.comboBoxOptionSetSingleViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_cust_active"
+            Default: =ThisItem.CUST_ACTIVE
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Active Customer?"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue30.Selected
+            Width: =320
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey20 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue30 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(12, 126, 44, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =[Parent.Default]
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =70
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(53, 74, 36, 1)
+                IsSearchable: =false
+                Items: =Choices('CUST_ACTIVE (Customer Master)')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(135, 190, 82, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(12, 126, 44, 1)
+                SelectMultiple: =false
+                Size: =21
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                ZIndex: =2
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue30.Y + DataCardValue30.Height
+                ZIndex: =3
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey20.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey20.Y
+                ZIndex: =4
+
+        CUST_ADDRESS_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_cust_address"
+            Default: =ThisItem.CUST_ADDRESS
+            DisplayMode: =DisplayMode.View
+            DisplayName: |-
+                ="Address:"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =320
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey30 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue39 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                ZIndex: =2
+
+        CUST_BUSINESSLINE_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_cust_businessline"
+            Default: =ThisItem.CUST_BUSINESSLINE
+            DisplayMode: =DisplayMode.View
+            DisplayName: |
+                ="Business Line"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =320
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey32 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue40 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey32.Y + DataCardKey32.Height + 5
+                ZIndex: =2
+
+        CUST_KEY_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_cust_key"
+            Default: =ThisItem.CUST_KEY
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="'Key' (Identifier)"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =320
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey34 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue41 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey34.Y + DataCardKey34.Height + 5
+                ZIndex: =2
+
+        CUST_NOTE_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_cust_note"
+            Default: =ThisItem.CUST_NOTE
+            DisplayMode: =DisplayMode.View
+            DisplayName: |-
+                ="Notes:"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =320
+            X: =1
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey40 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue42 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+                ZIndex: =2
+
+        CUST_PHONE_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_cust_phone"
+            Default: =ThisItem.CUST_PHONE
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Phone Number"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =320
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey41 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue43 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey41.Y + DataCardKey41.Height + 5
+                ZIndex: =2
+
+        CUST_NAME_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_name"
+            Default: =ThisItem.CUST_NAME
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Customer"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                Color: =RGBA(135, 190, 82, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =49
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =254
+                Wrap: =false
+                X: =30
+                Y: =5
+                ZIndex: =1
+
+            DataCardValue18 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =73
+                ZIndex: =2
+
+    Icon5 As icon.ArrowLeft:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Back();
+        X: =14
+        ZIndex: =3
+
+    "CustomerSubProjectGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DelayItemLoading: =true
+        Height: =351
+        Items: =Filter(ProjectMaster, LookUp('Customer Master', CUST_KEY = ProjectGallery.Selected.CUST_REF).CUST_KEY = CUST_REF)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Y: =785
+        ZIndex: =4
+
+        Title6_2 As label:
+            Color: =RGBA(92, 92, 92, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Lato Black'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.PROJ_NAME
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 173
+            X: =18
+            Y: =23
+            ZIndex: =2
+
+        Subtitle6_2 As label:
+            Color: =RGBA(92, 92, 92, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.PROJ_DESCRIPTION
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title6_2.Width
+            X: =Title6_2.X
+            Y: =Title6_2.Y + Title6_2.Height
+            ZIndex: =3
+
+        NextArrow5_2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent); Navigate(DeliverableDetails, ScreenTransition.UnCover);
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator7_2 As rectangle:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =96
+            ZIndex: =5
+
+        Rectangle6_2 As rectangle:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(135, 190, 82, 1)
+            Height: =Parent.TemplateHeight - Separator7_2.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+

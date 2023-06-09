@@ -182,7 +182,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
+                Text: =LookUp('Customer Master',ThisItem.CUST_REF = CUST_KEY).CUST_NAME
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey35_1.Y + DataCardKey35_1.Height + 5
@@ -602,4 +602,16 @@
         X: =361
         Y: =189
         ZIndex: =19
+
+    Icon3 As icon.ChevronDown:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.More
+        OnSelect: =Navigate(CustomerDetails,ScreenTransition.UnCover);
+        Rotation: =90
+        X: =563
+        Y: =258
+        ZIndex: =20
 
