@@ -98,7 +98,7 @@
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_brand"
-            Default: =ThisItem.'PROJ_MANAGER '
+            Default: =ThisItem.PROJ_MANAGER
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_brand")
             Fill: =RGBA(0, 0, 0, 0)
@@ -135,7 +135,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =ProjectGallery.Selected.cr8aa_manager
+                Text: =ProjectGallery.Selected.PROJ_MANAGER
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey33_1.Y + DataCardKey33_1.Height + 5
@@ -145,7 +145,7 @@
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_size"
-            Default: =ProjectGallery.Selected.cr8aa_customerkey
+            Default: =ProjectGallery.Selected.CUST_REF
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_size")
             Fill: =RGBA(0, 0, 0, 0)
@@ -239,9 +239,9 @@
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_type"
-            Default: =ThisItem.cr8aa_line
+            Default: =ThisItem.PROJ_BUSINESSLINE
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Projects],DataSourceInfo.DisplayName,"cr8aa_line")
+            DisplayName: =ProjectGallery.Selected.PROJ_BUSINESSLINE
             Fill: =RGBA(0, 0, 0, 0)
             Height: =66
             Required: =false
@@ -276,7 +276,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =ProjectGallery.Selected.cr8aa_line
+                Text: =ProjectGallery.Selected.PROJ_BUSINESSLINE
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =70
@@ -396,7 +396,7 @@
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
         Height: =265
-        Items: =SortByColumns('Task Master', "cr8aa_deliverablekey", SortOrder.Descending)
+        Items: =SortByColumns('Deliverable Master', "cr8aa_name", SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -416,7 +416,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.TASK_NAME
+            Text: =ThisItem.DELIV_NAME
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 173
             X: =18
@@ -434,7 +434,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.cr8aa_notes
+            Text: =ThisItem.PROJECT_REF
             VerticalAlign: =VerticalAlign.Top
             Width: =Title6.Width
             X: =Title6.X
