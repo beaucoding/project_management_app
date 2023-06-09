@@ -50,6 +50,13 @@
       }
     },
     {
+      "Kind": "default.cds_cr8aa_newemployeemaster_forms",
+      "Namespace": "EmployeeMaster (Forms)",
+      "Values": {
+        "Information": "142094a6-d2a3-4a01-b5b4-cd5d91a69f47"
+      }
+    },
+    {
       "Kind": "default.cds_cr8aa_projects_forms",
       "Namespace": "Projects (Forms)",
       "Values": {
@@ -95,13 +102,6 @@
       "Kind": "default.cds_cr8aa_table2_forms",
       "Namespace": "table2S (Forms)",
       "Values": {}
-    },
-    {
-      "Kind": "default.cds_cr8aa_newemployeemaster_forms",
-      "Namespace": "EmployeeMaster (Forms)",
-      "Values": {
-        "Information": "142094a6-d2a3-4a01-b5b4-cd5d91a69f47"
-      }
     }
   ]
 }

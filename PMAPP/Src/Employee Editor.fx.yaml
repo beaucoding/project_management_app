@@ -64,6 +64,7 @@
     EditForm1 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =EmployeeMaster
+        Fill: =RGBA(237, 237, 237, 1)
         Height: =1040
         Item: =BrowseGallery1.Selected
         OnSuccess: =Back();

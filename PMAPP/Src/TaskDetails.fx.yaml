@@ -4,7 +4,7 @@ TaskDetails As screen:
     TaskDetailsForm As formViewer:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =SortByColumns('Task Master', "cr8aa_name", SortOrder.Descending)
-        Fill: =RGBA(247, 247, 247, 1)
+        Fill: =RGBA(237, 237, 237, 1)
         Height: =1048
         Item: =DeliverableDetailsTaskGallery.Selected
         NumberOfColumns: =2

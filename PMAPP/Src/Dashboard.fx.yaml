@@ -8,7 +8,8 @@ Dashboard As screen:
         Fill: =RGBA(237, 237, 237, 1)
         FocusedBorderThickness: =4
         Height: =1136
-        HoverFill: =RGBA(73, 130, 5, 1)
+        HoverFill: |
+            =false
         PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         ZIndex: =1
