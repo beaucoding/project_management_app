@@ -1,0 +1,128 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_newemployeemasters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_newemployeemaster",
+    "MaxGetRowsCount": 2000,
+    "Name": "EmployeeMaster",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_applicator": "APPLICATOR",
+      "cr8aa_archewild_email": "ARCHEWILD_EMAIL",
+      "cr8aa_emp_active": "EMP_ACTIVE",
+      "cr8aa_emp_dept": "EMP_DEPT",
+      "cr8aa_emp_email": "EMP_EMAIL",
+      "cr8aa_emp_manager": "EMP_MANAGER",
+      "cr8aa_emp_mobile": "EMP_MOBILE",
+      "cr8aa_emp_name": "EMP_NAME",
+      "cr8aa_emp_pic": "EMP_PIC",
+      "cr8aa_emp_role": "EMP_ROLE",
+      "cr8aa_emp_schedule": "EMP_SCHEDULE",
+      "cr8aa_emp_title": "EMP_TITLE",
+      "cr8aa_emp_ts": "EMP_TS",
+      "cr8aa_newemployeemaster_AsyncOperations": "System Jobs",
+      "cr8aa_newemployeemaster_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_newemployeemaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_newemployeemaster_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_newemployeemaster_ProcessSession": "Process Sessions",
+      "cr8aa_newemployeemaster_SyncErrors": "Sync Errors",
+      "cr8aa_newemployeemasterid": "EmployeeMaster",
+      "cr8aa_percentage": "PERCENTAGE",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "EmployeeMaster",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "EmployeeMaster (Views)",
+    "Name": "_cr8aa_newemployeemaster_views",
+    "RelatedEntityName": "EmployeeMaster",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "253c5dfe-f064-4a0e-a267-28ca55cccf26": "Active EmployeeMasters",
+      "539303a3-27b2-42a9-90b1-db88e35d06d0": "EmployeeMaster Advanced Find View",
+      "9fb448d7-07b4-4329-a6eb-51860e68cd9f": "Inactive EmployeeMasters",
+      "c5e01ecb-be85-4694-908e-fb2c18f4eac3": "EmployeeMaster Associated View",
+      "ce12b35d-ff60-4413-8009-aaa06c509d21": "EmployeeMaster Lookup View"
+    }
+  },
+  {
+    "DisplayName": "APPLICATOR (EmployeeMaster)",
+    "Name": "cr8aa_newemployeemaster_cr8aa_applicator",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_applicator",
+        "OptionSetReferenceEntityName": "EmployeeMaster"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr8aa_applicator",
+    "RelatedEntityName": "EmployeeMaster",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (EmployeeMaster)",
+    "Name": "cr8aa_newemployeemaster_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "EmployeeMaster"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "EmployeeMaster",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (EmployeeMaster)",
+    "Name": "cr8aa_newemployeemaster_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "EmployeeMaster"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "EmployeeMaster",
+    "Type": "OptionSetInfo"
+  }
+]
