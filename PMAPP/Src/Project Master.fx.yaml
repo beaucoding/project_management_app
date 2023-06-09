@@ -148,7 +148,7 @@
         HintText: ="Search Projects"
         HoverBorderColor: =RGBA(135, 190, 82, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(53, 74, 36, 1)
+        HoverFill: =ColorFade(Self.Color, 20%)
         Size: =21
         Width: =560
         X: =66
