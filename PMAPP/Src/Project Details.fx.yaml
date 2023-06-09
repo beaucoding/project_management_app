@@ -192,7 +192,7 @@
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_maintenance"
-            Default: =ProjectGallery.Selected.cr8aa_allocatedpdays
+            Default: =ProjectGallery.Selected.PROJ_HOURS
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_maintenance")
             Fill: =RGBA(0, 0, 0, 0)
@@ -286,7 +286,7 @@
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_fuel"
-            Default: =ProjectGallery.Selected.cr8aa_active
+            Default: =ProjectGallery.Selected.IS_ACTIVE
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_fuel")
             Fill: =RGBA(0, 0, 0, 0)
@@ -333,7 +333,7 @@
             BorderColor: =RGBA(135, 190, 82, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_notes"
-            Default: =ProjectGallery.Selected.cr8aa_description
+            Default: =ProjectGallery.Selected.PROJ_DESCRIPTION
             DisplayMode: =DisplayMode.View
             DisplayName: ="Description"
             Fill: =RGBA(0, 0, 0, 0)
