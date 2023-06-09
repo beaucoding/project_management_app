@@ -1,4 +1,5 @@
 "'Employee Master' As screen.'phoneBrowseLayout_ver3.0'":
+    Fill: =RGBA(182, 205, 155, 1)
     LoadingSpinner: =LoadingSpinner.Data
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
