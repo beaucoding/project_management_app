@@ -21,7 +21,7 @@ TaskDetails As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_name")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =86
+            Height: =82
             Required: =true
             Width: =636
             X: =0
@@ -29,7 +29,6 @@ TaskDetails As screen:
             ZIndex: =1
 
             DataCardValue19 As label:
-                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -39,6 +38,7 @@ TaskDetails As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                Height: =68
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -46,7 +46,7 @@ TaskDetails As screen:
                 Text: =Parent.Default
                 Width: =596
                 X: =24
-                Y: =9
+                Y: =36
                 ZIndex: =2
 
         "'START BY_DataCard1' As typedDataCard.textualViewCard":
@@ -376,4 +376,55 @@ TaskDetails As screen:
         Tooltip: ="Back to list"
         Width: =88
         ZIndex: =4
+
+    Rectangle3_4 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(8, 88, 31, 1)
+        FocusedBorderThickness: =4
+        Height: =10
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        Width: =640
+        Y: =88
+        ZIndex: =5
+
+    ProjectDetailsSyncIcon_2 As icon.Sync:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Sync
+        PaddingLeft: =5
+        PaddingRight: =5
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        X: =485
+        Y: =12
+        ZIndex: =6
+
+    ProjectDetailsEditIcon_2 As icon.Edit:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Edit
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        X: =562
+        Y: =12
+        ZIndex: =7
 

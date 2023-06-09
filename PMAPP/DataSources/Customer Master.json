@@ -13,6 +13,7 @@
       "cr8aa_cust_active": "CUST_ACTIVE",
       "cr8aa_cust_address": "CUST_ADDRESS",
       "cr8aa_cust_businessline": "CUST_BUSINESSLINE",
+      "cr8aa_cust_email": "CUST_EMAIL",
       "cr8aa_cust_key": "CUST_KEY",
       "cr8aa_cust_note": "CUST_NOTE",
       "cr8aa_cust_phone": "CUST_PHONE",
