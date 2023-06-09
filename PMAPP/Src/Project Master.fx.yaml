@@ -24,7 +24,7 @@
         ZIndex: =2
 
         ProjectGalleryName As label:
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(0, 94, 146, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Lato Black'
             FontWeight: =FontWeight.Semibold
@@ -103,7 +103,7 @@
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(99, 139, 44, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
@@ -121,7 +121,6 @@
         ProjectStatusIndicator As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
-            BorderThickness: =2
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(127, 178, 57, 1)
             FocusedBorderThickness: =4
@@ -151,9 +150,9 @@
             ZIndex: =8
 
     ProjectSearch As text:
-        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderColor: =RGBA(66, 117, 5, 1)
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(66, 117, 5, 1)
         Default: =""
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -168,10 +167,6 @@
         PressedBorderColor: =RGBA(73, 130, 5, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
         Size: =21
         Width: =560
         X: =66
@@ -218,7 +213,7 @@
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -291,7 +286,6 @@
     Rectangle3_1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(8, 88, 31, 1)
         FocusedBorderThickness: =4
