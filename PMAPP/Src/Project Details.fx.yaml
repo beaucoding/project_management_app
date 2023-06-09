@@ -481,8 +481,8 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(165, 165, 165, 1)
         Height: =56
-        HoverColor: =//see project schedule
         Icon: =Icon.AddToCalendar
+        OnSelect: =//see project schedule
         PaddingLeft: =5
         PaddingRight: =5
         Width: =56
@@ -551,6 +551,7 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =56
+        HoverColor: =ColorFade(Color.DarkRed, 20%)
         Icon: =Icon.Flag
         OnSelect: =//flag this project
         PaddingLeft: =5
@@ -601,4 +602,15 @@
         X: =361
         Y: =189
         ZIndex: =19
+
+    "Map1 As 'Map (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DefaultZoomLevel: =8
+        DisplayMode: =DisplayMode.Edit
+        Height: =315
+        PinColor: =RGBA(29, 114, 169, 1)
+        Width: =321
+        X: =306
+        Y: =513
+        ZIndex: =20
 
