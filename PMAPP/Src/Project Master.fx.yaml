@@ -1,4 +1,5 @@
 "'Project Master' As screen":
+    Fill: =RGBA(73, 130, 5, 1)
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     ProjectMasterHeader_1 As rectangle:
@@ -13,7 +14,7 @@
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Fill: =RGBA(247, 247, 247, 1)
-        Height: =952
+        Height: =953
         Items: =SortByColumns(Search(ProjectMaster, ProjectSearch.Text, "cr8aa_name"),"cr8aa_name",SortOrder.Ascending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -92,7 +93,7 @@
 
         ProjectGallerySeperator As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            Fill: =RGBA(73, 130, 5, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -162,10 +163,10 @@
         Height: =55
         HintText: ="Search Projects"
         HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverColor: =RGBA(66, 117, 5, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         PressedBorderColor: =RGBA(73, 130, 5, 1)
-        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedColor: =RGBA(51, 91, 4, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
         Size: =21
         Width: =560
@@ -290,7 +291,7 @@
         Fill: =RGBA(8, 88, 31, 1)
         FocusedBorderThickness: =4
         Height: =10
-        HoverFill: =RGBA(73, 130, 5, 1)
+        HoverFill: =false
         PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         Y: =88
