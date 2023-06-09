@@ -2,6 +2,10 @@
   "DatasetName": "default.cds",
   "EntityName": "Customer Master",
   "InstanceUrl": "https://org3d6083a9.crm.dynamics.com/",
+  "LocalReferenceDSJson": {
+    "entitySetName": "cr8aa_customermasters",
+    "logicalName": "cr8aa_customermaster"
+  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org3d6083a9.crm.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('cr8aa_customermaster')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",

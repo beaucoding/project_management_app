@@ -1,9 +1,9 @@
 CustomerDetails As screen:
-    Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+    Fill: =RGBA(230, 230, 230, 1)
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     CustomerView As formViewer:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Customer Master'
         Height: =515
         Item: =LookUp('Customer Master', CUST_KEY = ProjectGallery.Selected.CUST_REF)
@@ -13,7 +13,7 @@ CustomerDetails As screen:
         ZIndex: =1
 
         CUST_ACTIVE_DataCard1 As typedDataCard.comboBoxOptionSetSingleViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_cust_active"
             Default: =ThisItem.CUST_ACTIVE
@@ -30,9 +30,17 @@ CustomerDetails As screen:
 
             DataCardKey20 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -43,30 +51,33 @@ CustomerDetails As screen:
 
             DataCardValue30 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(12, 126, 44, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(12, 126, 44, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                Color: =RGBA(51, 51, 51, 1)
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Font: =Font.'Segoe UI'
                 Height: =70
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(53, 74, 36, 1)
+                HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(212, 212, 212, 1)
                 IsSearchable: =false
                 Items: =Choices('CUST_ACTIVE (Customer Master)')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(135, 190, 82, 1)
+                PressedFill: =RGBA(73, 130, 5, 1)
                 SearchFields: =["Value"]
                 SearchItems: =[]
-                SelectionFill: =RGBA(12, 126, 44, 1)
+                SelectionFill: =RGBA(73, 130, 5, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -76,8 +87,14 @@ CustomerDetails As screen:
 
             ErrorMessage17 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(168, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -85,7 +102,7 @@ CustomerDetails As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -95,9 +112,17 @@ CustomerDetails As screen:
 
             StarVisible17 As label:
                 Align: =Align.Center
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey20.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -107,7 +132,7 @@ CustomerDetails As screen:
                 ZIndex: =4
 
         CUST_ADDRESS_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_cust_address"
             Default: =ThisItem.CUST_ADDRESS
@@ -124,9 +149,17 @@ CustomerDetails As screen:
 
             DataCardKey30 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -137,10 +170,15 @@ CustomerDetails As screen:
 
             DataCardValue39 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -152,7 +190,7 @@ CustomerDetails As screen:
                 ZIndex: =2
 
         CUST_BUSINESSLINE_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_cust_businessline"
             Default: =ThisItem.CUST_BUSINESSLINE
@@ -169,9 +207,17 @@ CustomerDetails As screen:
 
             DataCardKey32 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -182,10 +228,15 @@ CustomerDetails As screen:
 
             DataCardValue40 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -197,7 +248,7 @@ CustomerDetails As screen:
                 ZIndex: =2
 
         CUST_KEY_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_cust_key"
             Default: =ThisItem.CUST_KEY
@@ -213,9 +264,17 @@ CustomerDetails As screen:
 
             DataCardKey34 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -226,10 +285,15 @@ CustomerDetails As screen:
 
             DataCardValue41 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -241,7 +305,7 @@ CustomerDetails As screen:
                 ZIndex: =2
 
         CUST_NOTE_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_cust_note"
             Default: =ThisItem.CUST_NOTE
@@ -258,9 +322,17 @@ CustomerDetails As screen:
 
             DataCardKey40 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -271,10 +343,15 @@ CustomerDetails As screen:
 
             DataCardValue42 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -286,7 +363,7 @@ CustomerDetails As screen:
                 ZIndex: =2
 
         CUST_PHONE_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_cust_phone"
             Default: =ThisItem.CUST_PHONE
@@ -302,9 +379,17 @@ CustomerDetails As screen:
 
             DataCardKey41 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -315,10 +400,15 @@ CustomerDetails As screen:
 
             DataCardValue43 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -330,7 +420,7 @@ CustomerDetails As screen:
                 ZIndex: =2
 
         CUST_NAME_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_name"
             Default: =ThisItem.CUST_NAME
@@ -346,9 +436,17 @@ CustomerDetails As screen:
 
             DataCardKey17 As label:
                 AutoHeight: =true
-                Color: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =49
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =254
@@ -359,10 +457,15 @@ CustomerDetails As screen:
 
             DataCardValue18 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -374,17 +477,25 @@ CustomerDetails As screen:
                 ZIndex: =2
 
     Icon5 As icon.ArrowLeft:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(135, 190, 82, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(73, 130, 5, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ArrowLeft
         OnSelect: =Back();
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =14
         ZIndex: =3
 
     "CustomerSubProjectGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Height: =351
         Items: =Filter(ProjectMaster, LookUp('Customer Master', CUST_KEY = ProjectGallery.Selected.CUST_REF).CUST_KEY = CUST_REF)
@@ -434,14 +545,25 @@ CustomerDetails As screen:
 
         NextArrow5_2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(166, 166, 166, 1)
             Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =50
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent); Navigate(DeliverableDetails, ScreenTransition.UnCover);
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16
             PaddingTop: =16
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             Tooltip: ="View item details"
             Width: =50
             X: =Parent.TemplateWidth - Self.Width - 12
@@ -449,7 +571,7 @@ CustomerDetails As screen:
             ZIndex: =4
 
         Separator7_2 As rectangle:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =8
             OnSelect: =Select(Parent)
@@ -458,8 +580,8 @@ CustomerDetails As screen:
             ZIndex: =5
 
         Rectangle6_2 As rectangle:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            Fill: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             Height: =Parent.TemplateHeight - Separator7_2.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)

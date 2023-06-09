@@ -1,16 +1,21 @@
 EquipmentMaster As screen:
-    Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     Rectangle1 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderThickness: =4
         Height: =88
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         ZIndex: =2
 
     "EquipmentGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Height: =815
         Items: =SortByColumns(Search(Equipment, EQsearch.Text, "cr8aa_name","cr8aa_brand"), "cr8aa_name", SortOrder.Descending)
@@ -23,20 +28,28 @@ EquipmentMaster As screen:
         ZIndex: =3
 
         EQGalleryImage As image:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =128
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Image: =ThisItem.IMAGE
             OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
             Width: =128
             X: =16
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
         EQGalleryName As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -53,8 +66,9 @@ EquipmentMaster As screen:
             ZIndex: =2
 
         EQGalleryType As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -71,11 +85,16 @@ EquipmentMaster As screen:
 
         EQGalleryArrow As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(135, 190, 82, 1)
-            Color: =RGBA(135, 190, 82, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(73, 130, 5, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.NextArrow
             OnSelect: |-
                 =Select(Parent);
@@ -84,6 +103,9 @@ EquipmentMaster As screen:
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
@@ -92,8 +114,8 @@ EquipmentMaster As screen:
             ZIndex: =4
 
         EQGallerySeperator As rectangle:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            Fill: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -101,20 +123,26 @@ EquipmentMaster As screen:
             ZIndex: =5
 
     EquipmentAdd As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(12, 126, 44, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold
         Height: =100
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
         OnSelect: =NewForm(EquipmentEdit); Navigate(EquipmentEditor); 
         PaddingBottom: =8
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         RadiusBottomLeft: =500
         RadiusBottomRight: =500
         RadiusTopLeft: =500
@@ -127,27 +155,40 @@ EquipmentMaster As screen:
         ZIndex: =6
 
     Rectangle1_1 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderThickness: =4
         Height: =27
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         Y: =190
         ZIndex: =7
 
     EQsearch As text:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(51, 51, 51, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =70
-        HoverBorderColor: =RGBA(135, 190, 82, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(53, 74, 36, 1)
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =560
         X: =40
@@ -155,12 +196,20 @@ EquipmentMaster As screen:
         ZIndex: =8
 
     EquipmentMasterMenuIcon As icon.Hamburger:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(237, 237, 237, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Hamburger
         OnSelect: =Navigate(Dashboard)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =14
         Y: =12
         ZIndex: =9

@@ -1,20 +1,20 @@
 "'Employee Details' As screen.'phoneDetailViewLayout_ver3.0'":
     Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     RectQuickActionBar2 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(73, 130, 5, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
     IconBackarrow1 As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.ArrowLeft
         OnSelect: =Navigate('Employee Master', ScreenTransition.CoverRight)
@@ -22,7 +22,7 @@
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
-        PressedFill: =RGBA(255, 255, 255, 0.3)
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="Back to list"
         Width: =88
@@ -30,10 +30,10 @@
 
     IconEdit1 As icon.Edit:
         AccessibleLabel: =Self.Tooltip
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         DisplayMode: =If(DataSourceInfo([@EMPLOYEE_MASTER], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Person
@@ -42,7 +42,7 @@
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
-        PressedFill: =RGBA(255, 255, 255, 0.3)
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="Edit this item"
         Width: =88
@@ -64,7 +64,7 @@
         ZIndex: =5
 
     DetailForm1 As formViewer:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =SortByColumns([@EMPLOYEE_MASTER],"EMP_NAME",SortOrder.Descending)
         Height: =1048
         Item: =BrowseGallery1.Selected
@@ -75,7 +75,7 @@
         ZIndex: =6
 
         APPLICATOR_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="EMP_NAME"
             Default: =ThisItem.EMP_NAME 
@@ -90,15 +90,22 @@
             ZIndex: =1
 
             Button2 As button:
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(12, 126, 44, 1)
+                Fill: =RGBA(73, 130, 5, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =72
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+                HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
                 PaddingBottom: =2
+                PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -112,10 +119,14 @@
 
             DataCardValue1 As label:
                 Align: =Align.Center
-                BorderColor: =RGBA(135, 190, 82, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
                 Height: =73
@@ -136,17 +147,24 @@
                 ZIndex: =2
 
             Image3 As image:
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 ContentLanguage: ="Border"
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
                 Height: =314
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =ThisItem.EMP_PIC
                 ImagePosition: =ImagePosition.Stretch
                 PaddingBottom: =1
                 PaddingLeft: =1
                 PaddingRight: =1
                 PaddingTop: =1
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
@@ -165,9 +183,13 @@
 
                 Label2 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(135, 190, 82, 1)
-                    Color: =RGBA(255, 255, 255, 1)
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     FontWeight: =FontWeight.Bold
                     Height: =70
@@ -180,9 +202,13 @@
 
                 Label3 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(135, 190, 82, 1)
-                    Color: =RGBA(255, 255, 255, 1)
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     Height: =60
                     Size: =12
@@ -194,9 +220,13 @@
 
                 Label3_1 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(135, 190, 82, 1)
-                    Color: =RGBA(255, 255, 255, 1)
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
                     Font: =Font.Lato
                     Height: =70
                     Size: =18
@@ -207,12 +237,20 @@
                     ZIndex: =6
 
     Icon1 As icon.Trash:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(135, 190, 82, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(73, 130, 5, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Trash
         OnSelect: =Remove(EMPLOYEE_MASTER,BrowseGallery1.Selected);Navigate('Employee Master');
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =469
         Y: =12
         ZIndex: =7

@@ -1,9 +1,8 @@
 EquipmentDetails As screen:
-    Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     EquipmentDetailForm As formViewer:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =SortByColumns(Equipment, "cr8aa_name", SortOrder.Descending)
         Fill: =RGBA(247, 247, 247, 1)
         Height: =1048
@@ -15,7 +14,7 @@ EquipmentDetails As screen:
         ZIndex: =1
 
         NAME_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_name"
             Default: =ThisItem.NAME
@@ -30,10 +29,14 @@ EquipmentDetails As screen:
             ZIndex: =1
 
             DataCardValue31 As label:
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(0, 75, 125, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 Height: =70
                 PaddingLeft: =0
@@ -47,7 +50,7 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
         BRAND_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_brand"
             Default: =ThisItem.BRAND
@@ -63,9 +66,15 @@ EquipmentDetails As screen:
 
             DataCardKey33 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(95, 133, 57, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
                 Size: =24
@@ -78,10 +87,14 @@ EquipmentDetails As screen:
 
             DataCardValue32 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(92, 92, 92, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -94,7 +107,7 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
         TYPE_DataCard4 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_type"
             Default: =ThisItem.TYPE
@@ -110,9 +123,15 @@ EquipmentDetails As screen:
 
             DataCardKey39 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(95, 133, 57, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
                 Size: =24
@@ -125,10 +144,14 @@ EquipmentDetails As screen:
 
             DataCardValue38 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(92, 92, 92, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -141,7 +164,7 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
         SIZE_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_size"
             Default: =ThisItem.SIZE
@@ -157,9 +180,15 @@ EquipmentDetails As screen:
 
             DataCardKey35 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(95, 133, 57, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
                 Size: =24
@@ -172,10 +201,14 @@ EquipmentDetails As screen:
 
             DataCardValue34 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(92, 92, 92, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -188,7 +221,7 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
         MAINTENANCE_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_maintenance"
             Default: =ThisItem.MAINTENANCE
@@ -204,9 +237,15 @@ EquipmentDetails As screen:
 
             DataCardKey37 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(95, 133, 57, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
                 Size: =24
@@ -219,10 +258,14 @@ EquipmentDetails As screen:
 
             DataCardValue36 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(92, 92, 92, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -235,7 +278,7 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
         FUEL_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_fuel"
             Default: =ThisItem.FUEL
@@ -251,9 +294,15 @@ EquipmentDetails As screen:
 
             DataCardKey36 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(95, 133, 57, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
                 Size: =24
@@ -266,10 +315,14 @@ EquipmentDetails As screen:
 
             DataCardValue35 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(92, 92, 92, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -282,7 +335,7 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
         NOTES_DataCard3 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_notes"
             Default: =ThisItem.NOTES
@@ -298,9 +351,15 @@ EquipmentDetails As screen:
 
             DataCardKey38 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(95, 133, 57, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
                 Size: =24
@@ -313,10 +372,14 @@ EquipmentDetails As screen:
 
             DataCardValue37 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(135, 190, 82, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(92, 92, 92, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Lato Black'
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -329,18 +392,18 @@ EquipmentDetails As screen:
                 ZIndex: =2
 
     RectQuickActionBar2_1 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(73, 130, 5, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =2
 
     EQDetailsBack As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.ArrowLeft
         OnSelect: =Navigate(EquipmentMaster, ScreenTransition.CoverRight)
@@ -348,39 +411,58 @@ EquipmentDetails As screen:
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
-        PressedFill: =RGBA(255, 255, 255, 0.3)
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="Back to list"
         Width: =88
         ZIndex: =3
 
     EquipmentImage As image:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =320
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Image: =EquipmentGallery.Selected.IMAGE
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =320
         X: =296
         Y: =205
         ZIndex: =4
 
     EditEquipmentIcon As icon.Edit:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Edit
         OnSelect: =EditForm(EquipmentEdit); Navigate(EquipmentEditor);
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =488
         Y: =12
         ZIndex: =5
 
     Label1 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
         Font: =Font.'Lato Black'
         Height: =70
         Size: =24
@@ -391,56 +473,96 @@ EquipmentDetails As screen:
         ZIndex: =6
 
     DeleteEquipmentIcon As icon.Trash:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Trash
         OnSelect: =Remove(Equipment, EquipmentGallery.Selected); Navigate(EquipmentMaster);
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =565
         Y: =12
         ZIndex: =7
 
     Icon2 As icon.Link:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Link
         OnSelect: =false //links equipment to task or expense
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =88
         Y: =12
         ZIndex: =8
 
     Rectangle3 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(8, 88, 31, 1)
+        FocusedBorderThickness: =4
         Height: =10
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         Y: =88
         ZIndex: =9
 
     Rectangle4 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(210, 210, 210, 1)
+        FocusedBorderThickness: =4
         Height: =5
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         Y: =895
         ZIndex: =10
 
     Rectangle4_1 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(165, 165, 165, 1)
+        FocusedBorderThickness: =4
         Height: =3
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         Y: =900
         ZIndex: =11
 
     DataCardKey37_1 As label:
         AutoHeight: =true
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
         Color: =RGBA(95, 133, 57, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
         Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
         Height: =48
         PaddingBottom: =10
         PaddingLeft: =0

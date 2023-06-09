@@ -1,9 +1,8 @@
 "'Project Master' As screen":
-    Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     ProjectMasterHeader_1 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(247, 247, 247, 1)
         Height: =80
         Width: =Parent.Width
@@ -11,7 +10,7 @@
         ZIndex: =1
 
     "ProjectGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Fill: =RGBA(247, 247, 247, 1)
         Height: =952
@@ -25,7 +24,7 @@
         ZIndex: =2
 
         ProjectGalleryName As label:
-            Color: =RGBA(0, 94, 146, 1)
+            Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Lato Black'
             FontWeight: =FontWeight.Semibold
@@ -44,7 +43,7 @@
             ZIndex: =2
 
         ProjectGalleryManager As label:
-            Color: =RGBA(92, 92, 92, 1)
+            Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
             Height: =26
@@ -63,11 +62,16 @@
 
         ProjectGalleryArrow As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(135, 190, 82, 1)
-            Color: =RGBA(135, 190, 82, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(73, 130, 5, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.NextArrow
             OnSelect: |-
                 =Select(Parent);
@@ -76,6 +80,9 @@
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
@@ -84,8 +91,8 @@
             ZIndex: =4
 
         ProjectGallerySeperator As rectangle:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            Fill: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -93,9 +100,13 @@
             ZIndex: =5
 
         Label5 As label:
-            BorderColor: =RGBA(135, 190, 82, 1)
-            Color: =RGBA(99, 139, 44, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
             Font: =Font.'Lato Black'
             Height: =26
             PaddingBottom: =0
@@ -108,10 +119,16 @@
             ZIndex: =6
 
         ProjectStatusIndicator As rectangle:
-            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(127, 178, 57, 1)
+            FocusedBorderThickness: =4
             Height: =146
+            HoverFill: =RGBA(73, 130, 5, 1)
             OnSelect: =Select(Parent)
+            PressedFill: =RGBA(73, 130, 5, 1)
             Width: =10
             ZIndex: =7
 
@@ -134,20 +151,27 @@
             ZIndex: =8
 
     ProjectSearch As text:
-        BorderColor: =RGBA(8, 88, 31, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
-        Color: =RGBA(122, 171, 74, 1)
+        Color: =RGBA(51, 51, 51, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(237, 237, 237, 1)
         FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =55
         HintText: ="Search Projects"
-        HoverBorderColor: =RGBA(135, 190, 82, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(Self.Color, 20%)
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =560
         X: =66
@@ -155,27 +179,35 @@
         ZIndex: =3
 
     ProjectMasterHeader As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(73, 130, 5, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =4
 
     ProjectMasterRect As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(8, 88, 31, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(73, 130, 5, 1)
         Height: =5
         Width: =Parent.Width
         Y: =178
         ZIndex: =5
 
     ProjectMasterSearchIcon As icon.Search:
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(11, 113, 40, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(73, 130, 5, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Search
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =40
         X: =14
         Y: =118
@@ -183,9 +215,13 @@
 
     ProjectMasterLabel As label:
         Align: =Align.Center
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
         Font: =Font.'Lato Black'
         Height: =70
         Size: =28
@@ -196,42 +232,72 @@
         ZIndex: =7
 
     ProjectMasterAddIcon As icon.Add:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(237, 237, 237, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Add
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =562
         Y: =12
         ZIndex: =8
 
     ProjectMasterSyncIcon As icon.Sync:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(237, 237, 237, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =52
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Sync
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =494
         Y: =18
         ZIndex: =9
 
     ProjectMasterMenuIcon As icon.Hamburger:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(237, 237, 237, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Hamburger
         OnSelect: =Navigate(Dashboard)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         X: =14
         Y: =12
         ZIndex: =10
 
     Rectangle3_1 As rectangle:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(8, 88, 31, 1)
+        FocusedBorderThickness: =4
         Height: =10
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
         Width: =640
         Y: =88
         ZIndex: =11
