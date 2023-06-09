@@ -81,6 +81,13 @@
       "Kind": "default.cds_cr8aa_table2_forms",
       "Namespace": "table2S (Forms)",
       "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr8aa_projectmaster1_forms",
+      "Namespace": "ProjectMaster (Forms)",
+      "Values": {
+        "Information": "8666b2c7-c220-466b-a36e-53464e9a910f"
+      }
     }
   ]
 }

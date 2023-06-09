@@ -1,0 +1,126 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_projectmaster1s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_projectmaster1",
+    "MaxGetRowsCount": 2000,
+    "Name": "ProjectMaster",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "cr8aa_cust_ref": "CUST_REF",
+      "cr8aa_DeliverableMaster": "Deliverable Master",
+      "cr8aa_is_active": "IS_ACTIVE",
+      "cr8aa_name": "PROJ_NAME",
+      "cr8aa_proj_businessline": "PROJ_BUSINESSLINE",
+      "cr8aa_proj_hours": "PROJ_HOURS",
+      "cr8aa_proj_key": "PROJ_KEY",
+      "cr8aa_proj_manager": "PROJ_MANAGER ",
+      "cr8aa_projectdescription": "PROJ_DESCRIPTION",
+      "cr8aa_projectmaster1_Annotations": "Notes",
+      "cr8aa_projectmaster1_AsyncOperations": "System Jobs",
+      "cr8aa_projectmaster1_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_projectmaster1_connections1": "Connections (cr8aa_projectmaster1_connections1)",
+      "cr8aa_projectmaster1_connections2": "Connections (cr8aa_projectmaster1_connections2)",
+      "cr8aa_projectmaster1_DuplicateBaseRecord": "Duplicate Records (cr8aa_projectmaster1_DuplicateBaseRecord)",
+      "cr8aa_projectmaster1_DuplicateMatchingRecord": "Duplicate Records (cr8aa_projectmaster1_DuplicateMatchingRecord)",
+      "cr8aa_projectmaster1_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_projectmaster1_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_projectmaster1_ProcessSession": "Process Sessions",
+      "cr8aa_projectmaster1_SyncErrors": "Sync Errors",
+      "cr8aa_projectmaster1id": "Project Master",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ProjectMaster",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "ProjectMaster (Views)",
+    "Name": "_cr8aa_projectmaster1_views",
+    "RelatedEntityName": "ProjectMaster",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "33d67852-c656-45c8-939c-0178c94b4e60": "Project Master Lookup View",
+      "3ed6cb6a-43e7-4023-956c-48083b2df2af": "Project Master Associated View",
+      "54dbdcee-4c45-48f0-9631-d072a1ecbd3b": "Active Project Masters",
+      "c4ffc46a-cf27-436c-9a01-8397cfb070b2": "Project Master Advanced Find View",
+      "ceb2884e-7eaf-4f9c-b8f2-a3641dc1e6ce": "Inactive Project Masters"
+    }
+  },
+  {
+    "DisplayName": "IS_ACTIVE (ProjectMaster)",
+    "Name": "cr8aa_projectmaster1_cr8aa_is_active",
+    "OptionSetInfoNameMapping": {
+      "468450000": "TRUE",
+      "468450001": "FALSE"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_is_active",
+        "OptionSetReferenceEntityName": "ProjectMaster"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_is_active",
+    "RelatedEntityName": "ProjectMaster",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (ProjectMaster)",
+    "Name": "cr8aa_projectmaster1_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ProjectMaster"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ProjectMaster",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ProjectMaster)",
+    "Name": "cr8aa_projectmaster1_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ProjectMaster"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ProjectMaster",
+    "Type": "OptionSetInfo"
+  }
+]

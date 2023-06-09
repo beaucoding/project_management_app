@@ -6,7 +6,7 @@
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
         Height: =855
-        Items: =SortByColumns(Search(Projects, ProjectSearch.Text, "cr8aa_name","cr8aa_manager"), "cr8aa_name", SortOrder.Descending)
+        Items: =SortByColumns(Search(ProjectMaster, ProjectSearch.Text, "cr8aa_name"),"cr8aa_name",SortOrder.Ascending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =true
@@ -27,9 +27,9 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: =ThisItem.Name
+            Text: =ThisItem.PROJ_NAME
             VerticalAlign: =VerticalAlign.Top
-            Width: =178
+            Width: =368
             X: =62
             Y: =26
             ZIndex: =2
@@ -45,7 +45,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.Manager
+            Text: =ThisItem.'PROJ_KEY'
             VerticalAlign: =VerticalAlign.Top
             Width: =105
             X: =120
