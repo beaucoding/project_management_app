@@ -603,14 +603,3 @@
         Y: =189
         ZIndex: =19
 
-    "Map1 As 'Map (preview)'.pcfdataset":
-        BorderColor: =RGBA(0, 18, 107, 1)
-        DefaultZoomLevel: =8
-        DisplayMode: =DisplayMode.Edit
-        Height: =315
-        PinColor: =RGBA(29, 114, 169, 1)
-        Width: =321
-        X: =306
-        Y: =513
-        ZIndex: =20
-

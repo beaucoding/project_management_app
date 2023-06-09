@@ -2,7 +2,7 @@ DeliverableDetails As screen:
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
-    ProjectDetailForm_1 As formViewer:
+    DelivDetailForm As formViewer:
         BorderColor: =RGBA(135, 190, 82, 1)
         DataSource: =SortByColumns('Deliverable Master', "cr8aa_name", SortOrder.Descending)
         Fill: =RGBA(247, 247, 247, 1)
@@ -22,7 +22,7 @@ DeliverableDetails As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_name")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =65
+            Height: =86
             Required: =false
             Width: =636
             X: =0
@@ -42,8 +42,8 @@ DeliverableDetails As screen:
                 Size: =40
                 Text: =Parent.Default
                 Width: =606
-                X: =24
-                Y: =18
+                X: =18
+                Y: =6
                 ZIndex: =2
 
         BRAND_DataCard3_2 As typedDataCard.textualViewCard:
@@ -413,7 +413,7 @@ DeliverableDetails As screen:
             Color: =RGBA(166, 166, 166, 1)
             Height: =50
             Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent); Navigate(TaskDetails);
+            OnSelect: =Select(Parent); Navigate(TaskDetails, ScreenTransition.UnCover);
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16
@@ -442,14 +442,14 @@ DeliverableDetails As screen:
             Width: =4
             ZIndex: =6
 
-    ProjectDetailsHeader_1 As rectangle:
+    DelivDetailsHeader As rectangle:
         BorderColor: =RGBA(135, 190, 82, 1)
         Fill: =RGBA(12, 126, 44, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =3
 
-    ProjectDetailsLabel_1 As label:
+    DelivDetailsLabel As label:
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -463,7 +463,7 @@ DeliverableDetails As screen:
         Y: =9
         ZIndex: =4
 
-    ProjectDetailsBack_1 As icon.ChevronLeft:
+    DelivDetailsBack As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
         BorderColor: =RGBA(95, 133, 57, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -482,7 +482,7 @@ DeliverableDetails As screen:
         Width: =88
         ZIndex: =5
 
-    ProjectDetailsRect1_1 As rectangle:
+    DelivDetailsRect1 As rectangle:
         BorderColor: =RGBA(135, 190, 82, 1)
         Fill: =RGBA(210, 210, 210, 1)
         Height: =5
@@ -490,7 +490,7 @@ DeliverableDetails As screen:
         Y: =714
         ZIndex: =6
 
-    ProjectDetailsRect2_1 As rectangle:
+    DelivDetailsRect2 As rectangle:
         BorderColor: =RGBA(135, 190, 82, 1)
         Fill: =RGBA(165, 165, 165, 1)
         Height: =3

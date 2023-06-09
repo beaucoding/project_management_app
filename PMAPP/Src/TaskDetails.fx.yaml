@@ -2,3 +2,316 @@ TaskDetails As screen:
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
+    TaskDetailsForm As formViewer:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DataSource: =SortByColumns('Task Master', "cr8aa_name", SortOrder.Descending)
+        Fill: =RGBA(247, 247, 247, 1)
+        Height: =1048
+        Item: =DeliverableDetailsTaskGallery.Selected
+        NumberOfColumns: =2
+        SnapToColumns: =false
+        Width: =Parent.Width
+        Y: =88
+        ZIndex: =1
+
+        TASK_NAME_DataCard2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_name"
+            Default: =ThisItem.TASK_NAME
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Required: =true
+            Width: =636
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardValue19 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(0, 94, 146, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =40
+                Text: =Parent.Default
+                Width: =596
+                X: =24
+                Y: =9
+                ZIndex: =2
+
+        "'START BY_DataCard1' As typedDataCard.textualViewCard":
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_startby"
+            Default: =ThisItem.'START BY'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_startby")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =44
+            Required: =false
+            Width: =371
+            X: =-1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey28 As label:
+                AutoHeight: =true
+                Color: =RGBA(99, 139, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                Size: =24
+                Text: ="Start Date"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue28 As label:
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                Height: =33
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                ZIndex: =2
+
+        "'END BY_DataCard1' As typedDataCard.textualViewCard":
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_endby"
+            Default: =ThisItem.'END BY'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_endby")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =41
+            Required: =false
+            Width: =371
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey21 As label:
+                AutoHeight: =true
+                Color: =RGBA(99, 139, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                Size: =24
+                Text: ="Deadline"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue26 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey21.Y + DataCardKey21.Height + 5
+                ZIndex: =2
+
+        NECESSARY_PDAYS_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_necessary_pdays"
+            Default: =ThisItem.NECESSARY_PDAYS
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_necessary_pdays")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =64
+            Required: =false
+            Width: =371
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey27 As label:
+                AutoHeight: =true
+                Color: =RGBA(99, 139, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                Size: =24
+                Text: ="P-Days"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue27 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey27.Y + DataCardKey27.Height + 5
+                ZIndex: =2
+
+        UNIT_QUANTITY_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_unit_quantity"
+            Default: =ThisItem.UNIT_QUANTITY
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_unit_quantity")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =53
+            Required: =false
+            Width: =371
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey31 As label:
+                AutoHeight: =true
+                Color: =RGBA(99, 139, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                Size: =24
+                Text: ="Units"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue33 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey31.Y + DataCardKey31.Height + 5
+                ZIndex: =2
+
+        TASK_DESCRIPTION_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_task_description"
+            Default: =ThisItem.TASK_DESCRIPTION
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_task_description")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =237
+            Required: =false
+            Width: =636
+            X: =1
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey29 As label:
+                AutoHeight: =true
+                Color: =RGBA(99, 139, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                Size: =24
+                Text: ="Description"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue29 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                ZIndex: =2
+
+    TaskDetailsHeader As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
+    DelivDetailsLabel_1 As label:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =28
+        Text: ="Task Details"
+        Width: =361
+        X: =88
+        Y: =9
+        ZIndex: =3
+
+    DelivDetailsBack_1 As icon.ChevronLeft:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(95, 133, 57, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =88
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(DeliverableDetails, ScreenTransition.CoverRight)
+        PaddingBottom: =24
+        PaddingLeft: =24
+        PaddingRight: =24
+        PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
+        TabIndex: =0
+        Tooltip: ="Back to list"
+        Width: =88
+        ZIndex: =4
+
