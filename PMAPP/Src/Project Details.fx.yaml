@@ -405,7 +405,7 @@
         ZIndex: =8
 
         Title6 As label:
-            Color: =RGBA(92, 92, 92, 1)
+            Color: =RGBA(0, 94, 146, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Lato Black'
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -424,9 +424,9 @@
             ZIndex: =2
 
         Subtitle6 As label:
-            Color: =RGBA(92, 92, 92, 1)
+            Color: =RGBA(11, 113, 40, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.Lato
+            Font: =Font.'Lato Black'
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -434,9 +434,9 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.PROJECT_REF
+            Text: =Concatenate("$", ThisItem.DELIV_VALUE)
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title6.Width
+            Width: =101
             X: =Title6.X
             Y: =Title6.Y + Title6.Height
             ZIndex: =3
@@ -613,5 +613,13 @@
         Rotation: =90
         X: =563
         Y: =258
+        ZIndex: =20
+
+    Rectangle3_2 As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(8, 88, 31, 1)
+        Height: =10
+        Width: =640
+        Y: =88
         ZIndex: =20
 

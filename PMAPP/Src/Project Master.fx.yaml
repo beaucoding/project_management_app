@@ -2,21 +2,30 @@
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
+    ProjectMasterHeader_1 As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(247, 247, 247, 1)
+        Height: =80
+        Width: =Parent.Width
+        Y: =98
+        ZIndex: =1
+
     "ProjectGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
-        Height: =855
+        Fill: =RGBA(247, 247, 247, 1)
+        Height: =952
         Items: =SortByColumns(Search(ProjectMaster, ProjectSearch.Text, "cr8aa_name"),"cr8aa_name",SortOrder.Ascending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =true
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Y: =178
+        Y: =183
         ZIndex: =2
 
         ProjectGalleryName As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(0, 94, 146, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Lato Black'
             FontWeight: =FontWeight.Semibold
@@ -35,7 +44,7 @@
             ZIndex: =2
 
         ProjectGalleryManager As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(92, 92, 92, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
             Height: =26
@@ -45,11 +54,11 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.PROJ_KEY
+            Text: =ThisItem.PROJ_MANAGER
             VerticalAlign: =VerticalAlign.Top
-            Width: =105
+            Width: =310
             X: =120
-            Y: =60
+            Y: =67
             ZIndex: =3
 
         ProjectGalleryArrow As icon.ChevronRight:
@@ -85,7 +94,7 @@
 
         Label5 As label:
             BorderColor: =RGBA(135, 190, 82, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(99, 139, 44, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Lato Black'
             Height: =26
@@ -95,7 +104,7 @@
             Text: ="PM -"
             Width: =58
             X: =62
-            Y: =60
+            Y: =66
             ZIndex: =6
 
         ProjectStatusIndicator As rectangle:
@@ -106,24 +115,43 @@
             Width: =10
             ZIndex: =7
 
+        ProjectGalleryManager_1 As label:
+            Color: =RGBA(127, 178, 57, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            Height: =26
+            Italic: =true
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            Size: =16
+            Text: =ThisItem.PROJ_BUSINESSLINE
+            VerticalAlign: =VerticalAlign.Top
+            Width: =368
+            X: =62
+            Y: =97
+            ZIndex: =8
+
     ProjectSearch As text:
-        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderColor: =RGBA(8, 88, 31, 1)
         BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(122, 171, 74, 1)
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(237, 237, 237, 1)
         FocusedBorderThickness: =4
         Height: =55
+        HintText: ="Search Projects"
         HoverBorderColor: =RGBA(135, 190, 82, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(53, 74, 36, 1)
+        HoverFill: =ColorFade(Self.Color, 20%)
         Size: =21
         Width: =560
         X: =66
-        Y: =100
+        Y: =110
         ZIndex: =3
 
     ProjectMasterHeader As rectangle:
@@ -135,22 +163,22 @@
 
     ProjectMasterRect As rectangle:
         BorderColor: =RGBA(135, 190, 82, 1)
-        Fill: =RGBA(12, 126, 44, 1)
-        Height: =10
+        Fill: =RGBA(8, 88, 31, 1)
+        Height: =5
         Width: =Parent.Width
-        Y: =168
+        Y: =178
         ZIndex: =5
 
     ProjectMasterSearchIcon As icon.Search:
         BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(11, 113, 40, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =40
         Icon: =Icon.Search
         Width: =40
         X: =14
-        Y: =106
+        Y: =118
         ZIndex: =6
 
     ProjectMasterLabel As label:
@@ -199,4 +227,12 @@
         X: =14
         Y: =12
         ZIndex: =10
+
+    Rectangle3_1 As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(8, 88, 31, 1)
+        Height: =10
+        Width: =640
+        Y: =88
+        ZIndex: =11
 
