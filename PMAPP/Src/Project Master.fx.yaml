@@ -45,7 +45,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.'PROJ_KEY'
+            Text: =ThisItem.PROJ_KEY
             VerticalAlign: =VerticalAlign.Top
             Width: =105
             X: =120
