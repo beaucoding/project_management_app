@@ -18,9 +18,9 @@
         Italic: =true
         Size: =27
         Text: ="Employee Master"
-        Width: =Parent.Width - Self.X - IconSortUpDown1.Width - IconNewItem1.Width - refreshlabel.Width
+        Width: =283
         Wrap: =false
-        X: =20
+        X: =96
         ZIndex: =2
 
     refreshlabel As icon.Reload:
@@ -240,4 +240,15 @@
         Y: |
             =140
         ZIndex: =10
+
+    EmployeeMasterMenuIcon As icon.Hamburger:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(237, 237, 237, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Hamburger
+        OnSelect: =Navigate(Dashboard)
+        X: =14
+        Y: =12
+        ZIndex: =11
 
