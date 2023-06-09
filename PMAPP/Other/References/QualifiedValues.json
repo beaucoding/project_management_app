@@ -1,6 +1,13 @@
 {
   "QualifiedValues": [
     {
+      "Kind": "default.cds_cr8aa_customermaster_forms",
+      "Namespace": "Customer Master (Forms)",
+      "Values": {
+        "Information": "15d6f8e0-a1b6-4381-b46a-df6c4ad562cc"
+      }
+    },
+    {
       "Kind": "default.cds_cr8aa_deliverablemaster_forms",
       "Namespace": "Deliverable Master (Forms)",
       "Values": {

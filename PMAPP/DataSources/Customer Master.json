@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_customermaster",
+    "MaxGetRowsCount": 2000,
     "Name": "Customer Master",
     "NativeCDSDataSourceInfoNameMapping": {
       "{Attachments}": "Attachments",
