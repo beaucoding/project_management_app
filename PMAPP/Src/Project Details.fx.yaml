@@ -396,7 +396,7 @@
         BorderColor: =RGBA(135, 190, 82, 1)
         DelayItemLoading: =true
         Height: =265
-        Items: =SortByColumns('Deliverable Master', "cr8aa_name", SortOrder.Descending)
+        Items: =Filter('Deliverable Master',PROJECT_REF =  ProjectGallery.Selected.PROJ_KEY)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
