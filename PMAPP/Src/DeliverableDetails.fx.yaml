@@ -2,3 +2,452 @@ DeliverableDetails As screen:
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
+    ProjectDetailForm_1 As formViewer:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DataSource: =SortByColumns('Deliverable Master', "cr8aa_name", SortOrder.Descending)
+        Fill: =RGBA(247, 247, 247, 1)
+        Height: =1048
+        Item: =ProjectDetailsDeliverableGallery.Selected
+        NumberOfColumns: =2
+        SnapToColumns: =false
+        Width: =Parent.Width
+        Y: =88
+        ZIndex: =1
+
+        NAME_DataCard3_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_name"
+            Default: =ThisItem.cr8aa_name
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =150
+            Required: =false
+            Width: =636
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardValue31_2 As label:
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(0, 75, 125, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                Height: =70
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =10
+                Size: =40
+                Text: =Parent.Default
+                Width: =606
+                X: =24
+                Y: =18
+                ZIndex: =2
+
+        BRAND_DataCard3_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_brand"
+            Default: =ThisItem.START_DATE
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_brand")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =34
+            Required: =false
+            Width: =318
+            X: =-1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey33_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(95, 133, 57, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: ="Start Date"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue32_2 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =ProjectDetailsDeliverableGallery.Selected.START_DATE
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey33_2.Y + DataCardKey33_2.Height + 5
+                ZIndex: =2
+
+        SIZE_DataCard3_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_size"
+            Default: =ProjectDetailsDeliverableGallery.Selected.END_DATE
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_size")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =11
+            Required: =false
+            Width: =318
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey35_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(95, 133, 57, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: ="End Date"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue34_2 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey35_2.Y + DataCardKey35_2.Height + 5
+                ZIndex: =2
+
+        MAINTENANCE_DataCard3_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_maintenance"
+            Default: =ProjectGallery.Selected.PROJ_HOURS
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_maintenance")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =0
+            Required: =false
+            Width: =318
+            X: =-4
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey37_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(95, 133, 57, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: ="Allocated P-Days"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue36_2 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey37_3.Y + DataCardKey37_3.Height + 5
+                ZIndex: =2
+
+        TYPE_DataCard4_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_type"
+            Default: =ThisItem.END_DATE
+            DisplayMode: =DisplayMode.View
+            DisplayName: =ProjectGallery.Selected.PROJ_BUSINESSLINE
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =66
+            Required: =false
+            Width: =265
+            X: =-3
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey39_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(95, 133, 57, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: ="Product Line"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue38_2 As label:
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                Height: =30
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =ProjectGallery.Selected.PROJ_BUSINESSLINE
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =70
+                ZIndex: =2
+
+        FUEL_DataCard3_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_fuel"
+            Default: =ProjectGallery.Selected.IS_ACTIVE
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_fuel")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =93
+            Required: =false
+            Width: =318
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey36_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(95, 133, 57, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: ="Active?"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue35_2 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey36_2.Y + DataCardKey36_2.Height + 5
+                ZIndex: =2
+
+        NOTES_DataCard3_2 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8aa_notes"
+            Default: =ProjectGallery.Selected.PROJ_DESCRIPTION
+            DisplayMode: =DisplayMode.View
+            DisplayName: ="Description"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =309
+            Required: =false
+            Width: =424
+            X: =1
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey38_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(95, 133, 57, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =48
+                PaddingLeft: =0
+                Size: =24
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue37_2 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(135, 190, 82, 1)
+                Color: =RGBA(92, 92, 92, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Lato Black'
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey38_2.Y + DataCardKey38_2.Height + 5
+                ZIndex: =2
+
+    "DeliverableDetailsTaskGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(135, 190, 82, 1)
+        DelayItemLoading: =true
+        Height: =265
+        Items: =Filter('Task Master',DELIV_REF =  ProjectDetailsDeliverableGallery.Selected.DELIV_KEY)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Y: =871
+        ZIndex: =2
+
+        Title6_1 As label:
+            Color: =RGBA(92, 92, 92, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Lato Black'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.TASK_NAME
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 173
+            X: =18
+            Y: =23
+            ZIndex: =2
+
+        Subtitle6_1 As label:
+            Color: =RGBA(92, 92, 92, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.DELIV_REF
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title6_1.Width
+            X: =Title6_1.X
+            Y: =Title6_1.Y + Title6_1.Height
+            ZIndex: =3
+
+        NextArrow5_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent); Navigate(DeliverableDetails);
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator7_1 As rectangle:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =96
+            ZIndex: =5
+
+        Rectangle6_1 As rectangle:
+            BorderColor: =RGBA(135, 190, 82, 1)
+            Fill: =RGBA(135, 190, 82, 1)
+            Height: =Parent.TemplateHeight - Separator7_1.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+
+    ProjectDetailsHeader_1 As rectangle:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =3
+
+    ProjectDetailsLabel_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =28
+        Text: ="Project Deliverables"
+        Width: =361
+        X: =88
+        Y: =9
+        ZIndex: =4
+
+    ProjectDetailsBack_1 As icon.ChevronLeft:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(95, 133, 57, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =88
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate('Project Details', ScreenTransition.CoverRight)
+        PaddingBottom: =24
+        PaddingLeft: =24
+        PaddingRight: =24
+        PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
+        TabIndex: =0
+        Tooltip: ="Back to list"
+        Width: =88
+        ZIndex: =5
+
