@@ -76,7 +76,7 @@ EquipmentMaster As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.EQ_BRAND
+            Text: =ThisItem.cr8aa_brand
             VerticalAlign: =VerticalAlign.Top
             Width: =EQGalleryName.Width
             X: =EQGalleryName.X

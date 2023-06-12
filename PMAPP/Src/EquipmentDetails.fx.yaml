@@ -53,7 +53,7 @@ EquipmentDetails As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_brand"
-            Default: =ThisItem.EQ_BRAND
+            Default: =ThisItem.cr8aa_brand
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_brand")
             Fill: =RGBA(0, 0, 0, 0)
@@ -100,7 +100,7 @@ EquipmentDetails As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =ThisItem.EQ_BRAND
+                Text: =ThisItem.cr8aa_brand
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey33.Y + DataCardKey33.Height + 5
@@ -110,7 +110,7 @@ EquipmentDetails As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_type"
-            Default: =ThisItem.EQ_TYPE
+            Default: =ThisItem.cr8aa_type
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_type")
             Fill: =RGBA(0, 0, 0, 0)
@@ -167,7 +167,7 @@ EquipmentDetails As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_size"
-            Default: =ThisItem.EQ_SIZE
+            Default: =ThisItem.cr8aa_size
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_size")
             Fill: =RGBA(0, 0, 0, 0)

@@ -55,7 +55,7 @@ DeliverableDetails As screen:
             DataField: ="cr8aa_brand"
             Default: =ThisItem.START_DATE
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_brand")
+            DisplayName: ="Start Date"
             Fill: =RGBA(0, 0, 0, 0)
             Height: =78
             Required: =false
@@ -147,7 +147,7 @@ DeliverableDetails As screen:
             DataField: ="cr8aa_size"
             Default: =ThisItem.END_DATE
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_size")
+            DisplayName: ="End Date"
             Fill: =RGBA(0, 0, 0, 0)
             Height: =74
             Required: =false
