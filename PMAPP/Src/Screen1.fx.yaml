@@ -9,7 +9,6 @@ Screen1 As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
-        Y: =40
         ZIndex: =1
 
         Image5 As image:

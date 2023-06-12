@@ -113,7 +113,7 @@
             DataField: ="cr8aa_brand"
             Default: =ThisItem.PROJ_MANAGER
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_brand")
+            DisplayName: =
             Fill: =RGBA(0, 0, 0, 0)
             Height: =34
             Required: =false
@@ -170,7 +170,7 @@
             DataField: ="cr8aa_size"
             Default: =ProjectGallery.Selected.CUST_REF
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo(Equipment,DataSourceInfo.DisplayName,"cr8aa_size")
+            DisplayName: =
             Fill: =RGBA(0, 0, 0, 0)
             Height: =11
             Required: =false
@@ -402,7 +402,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =309
             Required: =false
-            Width: =424
+            Width: =371
             X: =1
             Y: =6
             ZIndex: =1

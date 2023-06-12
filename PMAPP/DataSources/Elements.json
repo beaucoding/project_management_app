@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_elements",
+    "MaxGetRowsCount": 2000,
     "Name": "Elements",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

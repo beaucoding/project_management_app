@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr8aa_materials",
+    "MaxGetRowsCount": 2000,
     "Name": "Materials",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
