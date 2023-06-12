@@ -37,7 +37,7 @@ EquipmentMaster As screen:
             Height: =128
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =ThisItem.IMAGE
+            Image: =ThisItem.EQ_IMAGE
             OnSelect: =Select(Parent)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -58,7 +58,7 @@ EquipmentMaster As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: =ThisItem.NAME
+            Text: =ThisItem.EQ_NAME
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - EQGalleryImage.Width - 104
             X: =EQGalleryImage.X + EQGalleryImage.Width + 24
@@ -76,7 +76,7 @@ EquipmentMaster As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.BRAND
+            Text: =ThisItem.EQ_BRAND
             VerticalAlign: =VerticalAlign.Top
             Width: =EQGalleryName.Width
             X: =EQGalleryName.X
