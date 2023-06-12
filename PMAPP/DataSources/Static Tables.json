@@ -10,6 +10,7 @@
     "Name": "Static Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr8aa_cr8aa_referencetable_StaticLookup_cr8aa_e": "Reference Tables",
       "cr8aa_eqfuel": "EQfuel",
       "cr8aa_eqmaintenance": "EQmaintenance",
       "cr8aa_eqownership": "EQownership",
@@ -28,7 +29,7 @@
       "cr8aa_equipmentsizesid": "Equipment Sizes",
       "cr8aa_hyperlink": "Hyperlink",
       "cr8aa_name": "Row Number",
-      "cr8aa_REF": "REF",
+      "cr8aa_REF": "Reference Column",
       "cr8aa_statickey": "STATIC KEY",
       "cr8aa_string": "String",
       "createdby": "Created By",

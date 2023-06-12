@@ -4,7 +4,7 @@ Screen1 As screen:
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
-        Items: ='Reference Tables'
+        Items: ='Static Tables'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -22,6 +22,7 @@ Screen1 As screen:
             Height: =72
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.Hyperlink
             OnSelect: =Select(Parent)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -45,7 +46,7 @@ Screen1 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =LookUp('Static Tables', String = ThisItem.Color).'Row Number'
+            Text: =ThisItem.'Reference Column'.KEY
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 173
             X: =103
@@ -64,7 +65,7 @@ Screen1 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.'Created On'
+            Text: =ThisItem.'Row Number'
             VerticalAlign: =VerticalAlign.Top
             Width: =Title4.Width
             X: =Title4.X
