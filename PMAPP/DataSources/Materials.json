@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_materialses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_materials",
+    "Name": "Materials",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_mat_key": "MAT_KEY",
+      "cr8aa_mat_type": "MAT_TYPE",
+      "cr8aa_mat_unitcost": "MAT_UNITCOST",
+      "cr8aa_materials_AsyncOperations": "System Jobs",
+      "cr8aa_materials_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_materials_DuplicateBaseRecord": "Duplicate Records (cr8aa_materials_DuplicateBaseRecord)",
+      "cr8aa_materials_DuplicateMatchingRecord": "Duplicate Records (cr8aa_materials_DuplicateMatchingRecord)",
+      "cr8aa_materials_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_materials_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_materials_ProcessSession": "Process Sessions",
+      "cr8aa_materials_SyncErrors": "Sync Errors",
+      "cr8aa_materialsid": "Materials",
+      "cr8aa_name": "MAT_NAME",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Materials",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Materials (Views)",
+    "Name": "_cr8aa_materials_views",
+    "RelatedEntityName": "Materials",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1cf2518c-1d48-4731-b45b-cc5436d26075": "Materials Lookup View",
+      "25d35f6f-e93a-46a4-bb0c-451775c4f7b4": "Materials Associated View",
+      "2928f3fc-59da-47d7-9564-b0d03a08ec89": "Inactive Materials",
+      "aa217a95-e110-4252-b597-b68d64ff4be8": "Materials Advanced Find View",
+      "b247a959-4782-4068-9ce8-83e88d3168a2": "Active Materials"
+    }
+  },
+  {
+    "DisplayName": "Status (Materials)",
+    "Name": "cr8aa_materials_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Materials"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Materials",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Materials)",
+    "Name": "cr8aa_materials_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Materials"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Materials",
+    "Type": "OptionSetInfo"
+  }
+]

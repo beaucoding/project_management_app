@@ -170,7 +170,7 @@
             DataField: ="cr8aa_size"
             Default: =ProjectGallery.Selected.CUST_REF
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Equipment],DataSourceInfo.DisplayName,"cr8aa_size")
+            DisplayName: =DataSourceInfo(Equipment,DataSourceInfo.DisplayName,"cr8aa_size")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =11
             Required: =false

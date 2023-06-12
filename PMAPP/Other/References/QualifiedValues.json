@@ -102,6 +102,20 @@
       "Kind": "default.cds_cr8aa_table2_forms",
       "Namespace": "table2S (Forms)",
       "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr8aa_elements_forms",
+      "Namespace": "Elements (Forms)",
+      "Values": {
+        "Information": "ef549afd-d390-43a7-9d65-e6ef15731a84"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_materials_forms",
+      "Namespace": "Materials (Forms)",
+      "Values": {
+        "Information": "53001731-fc7c-4de5-a726-f83099b9e2da"
+      }
     }
   ]
 }

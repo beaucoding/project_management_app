@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_elementses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_elements",
+    "Name": "Elements",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_elem_key": "ELEM_KEY",
+      "cr8aa_elem_mat1_key": "ELEM_MAT1_KEY",
+      "cr8aa_elem_mat2_key": "ELEM_MAT2_KEY",
+      "cr8aa_elem_mat3_key": "ELEM_MAT3_KEY",
+      "cr8aa_elem_mat4_key": "ELEM_MAT4_KEY",
+      "cr8aa_elem_mat5_key": "ELEM_MAT5_KEY",
+      "cr8aa_elem_notes": "ELEM_NOTES",
+      "cr8aa_elem_unit_cost": "ELEM_PDAYS",
+      "cr8aa_elem_unit_type": "ELEM_UNIT_TYPE",
+      "cr8aa_elements_AsyncOperations": "System Jobs",
+      "cr8aa_elements_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_elements_DuplicateBaseRecord": "Duplicate Records (cr8aa_elements_DuplicateBaseRecord)",
+      "cr8aa_elements_DuplicateMatchingRecord": "Duplicate Records (cr8aa_elements_DuplicateMatchingRecord)",
+      "cr8aa_elements_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_elements_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_elements_ProcessSession": "Process Sessions",
+      "cr8aa_elements_SyncErrors": "Sync Errors",
+      "cr8aa_elementsid": "Elements",
+      "cr8aa_name": "ELEM_NAME",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Elements",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Elements (Views)",
+    "Name": "_cr8aa_elements_views",
+    "RelatedEntityName": "Elements",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0a00fba0-dbfd-4110-908d-9246d8581cea": "Elements Lookup View",
+      "44e18d5e-e5b2-4523-ab44-05e8a036b399": "Inactive Elements",
+      "8db1ee6e-5fd4-4627-a98f-6754b78a209c": "Elements Associated View",
+      "cd0b518a-f6f1-4578-b2bc-df68990ba8a3": "Active Elements",
+      "fe396e56-4805-480e-b9f5-5a58f17954c1": "Elements Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Elements)",
+    "Name": "cr8aa_elements_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Elements"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Elements",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Elements)",
+    "Name": "cr8aa_elements_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Elements"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Elements",
+    "Type": "OptionSetInfo"
+  }
+]
