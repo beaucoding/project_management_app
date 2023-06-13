@@ -17,7 +17,7 @@
       "cr8aa_cust_key": "CUST_KEY",
       "cr8aa_cust_note": "CUST_NOTE",
       "cr8aa_cust_phone": "CUST_PHONE",
-      "cr8aa_cust_plants": "CUST_PLANTS",
+      "cr8aa_cust_plants": "HAS_PLANTS",
       "cr8aa_customermaster_Annotations": "Notes",
       "cr8aa_customermaster_AsyncOperations": "System Jobs",
       "cr8aa_customermaster_BulkDeleteFailures": "Bulk Delete Failures",
@@ -30,6 +30,8 @@
       "cr8aa_customermaster_ProcessSession": "Process Sessions",
       "cr8aa_customermaster_SyncErrors": "Sync Errors",
       "cr8aa_customermasterid": "Customer Master",
+      "cr8aa_has_eco": "HAS_ECO",
+      "cr8aa_is_projects": "HAS_PROJECT",
       "cr8aa_name": "CUST_NAME",
       "createdby": "Created By",
       "createdon": "Created On",
@@ -84,7 +86,7 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "CUST_PLANTS (Customer Master)",
+    "DisplayName": "HAS_PLANTS (Customer Master)",
     "Name": "cr8aa_customermaster_cr8aa_cust_plants",
     "OptionSetInfoNameMapping": {
       "468450000": "TRUE",
@@ -100,6 +102,46 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "cr8aa_cust_plants",
+    "RelatedEntityName": "Customer Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "HAS_ECO (Customer Master)",
+    "Name": "cr8aa_customermaster_cr8aa_has_eco",
+    "OptionSetInfoNameMapping": {
+      "468450000": "TRUE",
+      "468450001": "FALSE"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_has_eco",
+        "OptionSetReferenceEntityName": "Customer Master"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_has_eco",
+    "RelatedEntityName": "Customer Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "HAS_PROJECT (Customer Master)",
+    "Name": "cr8aa_customermaster_cr8aa_is_projects",
+    "OptionSetInfoNameMapping": {
+      "468450000": "TRUE",
+      "468450001": "FALSE"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_is_projects",
+        "OptionSetReferenceEntityName": "Customer Master"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_is_projects",
     "RelatedEntityName": "Customer Master",
     "Type": "OptionSetInfo"
   },

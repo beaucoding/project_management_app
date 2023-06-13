@@ -116,6 +116,13 @@
       "Kind": "default.cds_cr8aa_table2_forms",
       "Namespace": "table2S (Forms)",
       "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr8aa_ordermaster_forms",
+      "Namespace": "Order Master (Forms)",
+      "Values": {
+        "Information": "6caa0018-3356-4788-b98e-dbc9a685d725"
+      }
     }
   ]
 }

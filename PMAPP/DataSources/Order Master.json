@@ -1,0 +1,121 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8aa_ordermasters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8aa_ordermaster",
+    "Name": "Order Master",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8aa_budget_ref": "BUDGET_REF",
+      "cr8aa_cm_ref": "CM_REF",
+      "cr8aa_contact_ref": "CONTACT_REF",
+      "cr8aa_crm_complete": "CRM_COMPLETE",
+      "cr8aa_name": "OR_NAME",
+      "cr8aa_or_due": "OR_DUE",
+      "cr8aa_or_key": "OR_KEY",
+      "cr8aa_or_manager": "OR_MANAGER",
+      "cr8aa_ordermaster_AsyncOperations": "System Jobs",
+      "cr8aa_ordermaster_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8aa_ordermaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_ordermaster_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8aa_ordermaster_ProcessSession": "Process Sessions",
+      "cr8aa_ordermaster_SyncErrors": "Sync Errors",
+      "cr8aa_ordermasterid": "Order Master",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Order Master",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Order Master (Views)",
+    "Name": "_cr8aa_ordermaster_views",
+    "RelatedEntityName": "Order Master",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00d9c336-e980-46de-9591-9285b3a5e6b8": "Inactive Order Master",
+      "3f2e694a-526a-42e3-a1bb-4d78e3bf85d9": "Order Master Associated View",
+      "50e5b605-411a-44fb-bbc1-d872a64de9df": "Active Order Master",
+      "b3edf722-1981-49db-b1a4-a5ab8a16e932": "Order Master Lookup View",
+      "d42bafea-3bb7-4cd5-b721-f59b14e62ce6": "Order Master Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "CRM_COMPLETE (Order Master)",
+    "Name": "cr8aa_ordermaster_cr8aa_crm_complete",
+    "OptionSetInfoNameMapping": {
+      "468450000": "TRUE",
+      "468450001": "FALSE"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8aa_crm_complete",
+        "OptionSetReferenceEntityName": "Order Master"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8aa_crm_complete",
+    "RelatedEntityName": "Order Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Order Master)",
+    "Name": "cr8aa_ordermaster_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Order Master"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Order Master",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Order Master)",
+    "Name": "cr8aa_ordermaster_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Order Master"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Order Master",
+    "Type": "OptionSetInfo"
+  }
+]
