@@ -12,7 +12,7 @@
         HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ArrowLeft
-        OnSelect: =Navigate(DeliverableDetails)
+        OnSelect: =Back()
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -22,6 +22,7 @@
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Task Master'
         Height: =1016
+        Item: =DeliverableDetailsTaskGallery.Selected
         Width: =640
         Y: =65
         ZIndex: =2
