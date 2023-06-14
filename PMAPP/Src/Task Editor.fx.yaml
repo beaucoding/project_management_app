@@ -10,7 +10,8 @@
         Y: =100
         ZIndex: =1
 
-        DELIV_REF_DataCard1 As typedDataCard.textualEditCard:
+        DELIV_REF_DataCard2 As typedDataCard.allowedValuesStringEditCard:
+            AllowedValues: =Distinct(Filter('Deliverable Master', DELIV_REF = PROJ_KEY), DELIV_NAME)
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_deliv_ref"
@@ -19,15 +20,14 @@
             DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_deliv_ref")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Task Master'], DataSourceInfo.MaxLength, "cr8aa_deliv_ref")
             Required: =false
-            Update: =DataCardValue20.Text
+            Update: =DataCardValue15.Selected.Value
             Width: =640
             X: =0
             Y: =6
             ZIndex: =1
 
-            DataCardKey15 As label:
+            DataCardKey14 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -48,36 +48,39 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue20 As text:
+            DataCardValue15 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
                 Default: =Parent.Default
-                DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =70
                 HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(73, 130, 5, 1)
-                PressedColor: =RGBA(51, 51, 51, 1)
-                PressedFill: =RGBA(255, 255, 255, 1)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                HoverFill: =RGBA(212, 212, 212, 1)
+                Items: =Parent.AllowedValues
+                PaddingBottom: =5
+                PaddingLeft: =12
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(73, 130, 5, 1)
+                SelectionFill: =RGBA(73, 130, 5, 1)
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
             ErrorMessage14 As label:
@@ -102,7 +105,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue20.Y + DataCardValue20.Height
+                Y: =DataCardValue15.Y + DataCardValue15.Height
                 ZIndex: =3
 
             StarVisible14 As label:
@@ -116,14 +119,14 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey15.Height
+                Height: =DataCardKey14.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey15.Y
+                Y: =DataCardKey14.Y
                 ZIndex: =4
 
         DIFFICULTY_DataCard1 As typedDataCard.comboBoxOptionSetSingleEditCard:
@@ -1152,7 +1155,7 @@
         DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.Check
-        OnSelect: =SubmitForm(TaskForm);
+        OnSelect: =SubmitForm(TaskForm); Navigate('Task Details');
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
