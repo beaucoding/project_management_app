@@ -17,6 +17,7 @@
       "cr8aa_ElementsLookup": "ElementsLookup",
       "cr8aa_endby": "END BY",
       "cr8aa_name": "TASK_NAME",
+      "cr8aa_PROJECT_LOOKUP": "PROJECT_LOOKUP",
       "cr8aa_projectmaster_Annotations": "Notes",
       "cr8aa_projectmaster_AsyncOperations": "System Jobs",
       "cr8aa_projectmaster_BulkDeleteFailures": "Bulk Delete Failures",

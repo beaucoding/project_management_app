@@ -10,6 +10,7 @@
     "Name": "ProjectMaster",
     "NativeCDSDataSourceInfoNameMapping": {
       "{Attachments}": "Attachments",
+      "cr8aa_cr8aa_projectmaster_PROJECT_LOOKUP_cr8aa_": "Task Master",
       "cr8aa_cust_ref": "CUST_REF",
       "cr8aa_DeliverableMaster": "Deliverable Master",
       "cr8aa_is_active": "IS_ACTIVE",
