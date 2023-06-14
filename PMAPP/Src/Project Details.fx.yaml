@@ -816,9 +816,9 @@
         Font: =Font.'Segoe UI'
         Height: =119
         Size: =21
-        Text: =Sum(Filter('Deliverable Master', PROJECT_REF =  ProjectGallery.Selected.PROJ_KEY),DELIV_VALUE*GIVEN_PDAYS)
+        Text: =Concatenate("$",Sum(Filter('Deliverable Master', PROJECT_REF =  ProjectGallery.Selected.PROJ_KEY),DELIV_VALUE))
         Width: =223
-        X: =350
-        Y: =474
+        X: =361
+        Y: =482
         ZIndex: =21
 
