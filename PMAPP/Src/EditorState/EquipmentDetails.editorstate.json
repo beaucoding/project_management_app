@@ -3417,7 +3417,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EQ_AMOUNT_DataCard1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4178,7 +4178,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FUEL_DataCard3",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4908,7 +4908,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NAME_DataCard3",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5042,7 +5042,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NOTES_DataCard3",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
