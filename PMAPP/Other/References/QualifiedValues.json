@@ -15,10 +15,38 @@
       }
     },
     {
+      "Kind": "default.cds_cr8aa_elements_forms",
+      "Namespace": "Elements (Forms)",
+      "Values": {
+        "Information": "ef549afd-d390-43a7-9d65-e6ef15731a84"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_newemployeemaster_forms",
+      "Namespace": "EmployeeMaster (Forms)",
+      "Values": {
+        "Information": "142094a6-d2a3-4a01-b5b4-cd5d91a69f47"
+      }
+    },
+    {
       "Kind": "default.cds_cr8aa_equipment_forms",
       "Namespace": "Equipment (Forms)",
       "Values": {
         "Information": "cc1ff39e-f963-45ea-9445-e884a045c6dc"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_materials_forms",
+      "Namespace": "Materials (Forms)",
+      "Values": {
+        "Information": "53001731-fc7c-4de5-a726-f83099b9e2da"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8aa_ordermaster_forms",
+      "Namespace": "Order Master (Forms)",
+      "Values": {
+        "Information": "6caa0018-3356-4788-b98e-dbc9a685d725"
       }
     },
     {
@@ -47,34 +75,6 @@
       "Namespace": "Task Master (Forms)",
       "Values": {
         "Information": "ca282f83-2b73-4cad-9f95-c91fa55b1295"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8aa_newemployeemaster_forms",
-      "Namespace": "EmployeeMaster (Forms)",
-      "Values": {
-        "Information": "142094a6-d2a3-4a01-b5b4-cd5d91a69f47"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8aa_elements_forms",
-      "Namespace": "Elements (Forms)",
-      "Values": {
-        "Information": "ef549afd-d390-43a7-9d65-e6ef15731a84"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8aa_materials_forms",
-      "Namespace": "Materials (Forms)",
-      "Values": {
-        "Information": "53001731-fc7c-4de5-a726-f83099b9e2da"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8aa_ordermaster_forms",
-      "Namespace": "Order Master (Forms)",
-      "Values": {
-        "Information": "6caa0018-3356-4788-b98e-dbc9a685d725"
       }
     },
     {

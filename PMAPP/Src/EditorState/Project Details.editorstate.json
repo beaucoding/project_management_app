@@ -4424,7 +4424,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5988,7 +5988,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ProjectDetailsDeliverableGallery",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7532,7 +7532,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ProjectDetailsRect2",
-      "ParentIndex": 17,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
