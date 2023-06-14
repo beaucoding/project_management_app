@@ -344,7 +344,7 @@ EquipmentDetails As screen:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -398,7 +398,6 @@ EquipmentDetails As screen:
     Rectangle3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        BorderThickness: =2
         DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(8, 88, 31, 1)
         FocusedBorderThickness: =4

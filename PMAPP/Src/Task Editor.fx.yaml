@@ -21,10 +21,10 @@
     TaskForm As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Task Master'
-        Height: =1016
+        Height: =992
         Item: =DeliverableDetailsTaskGallery.Selected
         Width: =640
-        Y: =65
+        Y: =142
         ZIndex: =2
 
         DELIV_REF_DataCard1 As typedDataCard.textualEditCard:

@@ -479,16 +479,15 @@ DeliverableDetails As screen:
         NextArrow5_1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(99, 139, 44, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =50
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.ChevronRight
+            Icon: =Icon.NextArrow
             OnSelect: =Select(Parent); Navigate(TaskDetails, ScreenTransition.UnCover);
             PaddingBottom: =16
             PaddingLeft: =16
@@ -498,7 +497,6 @@ DeliverableDetails As screen:
             PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Tooltip: ="View item details"
-            Width: =50
             X: =Parent.TemplateWidth - Self.Width - 12
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
@@ -655,6 +653,8 @@ DeliverableDetails As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Add
         OnSelect: =NewForm(TaskForm); Navigate('Task Editor');
+        PaddingBottom: =5
+        PaddingRight: =5
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
