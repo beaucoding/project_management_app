@@ -1,4 +1,4 @@
-DeliverableDetails As screen:
+"'Deliverable Details' As screen":
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     DelivDetailForm As formViewer:
@@ -488,7 +488,7 @@ DeliverableDetails As screen:
             HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.NextArrow
-            OnSelect: =Select(Parent); Navigate(TaskDetails, ScreenTransition.UnCover);
+            OnSelect: =Select(Parent); Navigate('Task Details', ScreenTransition.UnCover);
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16

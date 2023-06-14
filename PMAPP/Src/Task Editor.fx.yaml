@@ -1,31 +1,14 @@
 "'Task Editor' As screen":
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
-    Icon6 As icon.ArrowLeft:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(73, 130, 5, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.ArrowLeft
-        OnSelect: =Back()
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        ZIndex: =1
-
     TaskForm As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: ='Task Master'
-        Height: =992
+        Height: =1033
         Item: =DeliverableDetailsTaskGallery.Selected
         Width: =640
-        Y: =142
-        ZIndex: =2
+        Y: =100
+        ZIndex: =1
 
         DELIV_REF_DataCard1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -1134,4 +1117,30 @@
                 Wrap: =false
                 Y: =DataCardKey4.Y
                 ZIndex: =4
+
+    RectQuickActionBar2_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(73, 130, 5, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
+    IconCancel1_1 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        Height: =88
+        Icon: =Icon.Cancel
+        OnSelect: =ResetForm(TaskForm);Back();
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        PressedFill: =RGBA(0, 0, 0, 0)
+        TabIndex: =0
+        Tooltip: ="Cancel item"
+        Width: =88
+        ZIndex: =3
 

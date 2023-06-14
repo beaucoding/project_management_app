@@ -4734,6 +4734,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 10
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -5426,66 +5438,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Task Editor'.Icon6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Task Editor'.Icon6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Task Editor",
-                "type": "'Task Editor'.Icon6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Task Editor'.Icon6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Task Editor'.Icon6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Task Editor",
-                "type": "'Task Editor'.Icon6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Task Editor'.TaskForm.TASK_NAME_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
@@ -5846,19 +5798,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TaskDetails.ProjectDetailsEditIcon_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TaskDetails.ProjectDetailsEditIcon_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "TaskDetails",
-                "type": "TaskDetails.ProjectDetailsEditIcon_2"
+                "module": "Task Details",
+                "type": "'Task Details'.ProjectDetailsEditIcon_2"
               }
             }
           ],
@@ -5876,19 +5828,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TaskDetails.ProjectDetailsEditIcon_2.TabIndex"
+                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TaskDetails.ProjectDetailsEditIcon_2.TabIndex",
+                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "TaskDetails",
-                "type": "TaskDetails.ProjectDetailsEditIcon_2"
+                "module": "Task Details",
+                "type": "'Task Details'.ProjectDetailsEditIcon_2"
               }
             }
           ],
@@ -6266,19 +6218,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DeliverableDetails.Icon4.AccessibleLabel"
+                  "fullyQualifiedName": "'Deliverable Details'.Icon4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DeliverableDetails.Icon4.AccessibleLabel",
+                  "fullyQualifiedName": "'Deliverable Details'.Icon4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "DeliverableDetails",
-                "type": "DeliverableDetails.Icon4"
+                "module": "Deliverable Details",
+                "type": "'Deliverable Details'.Icon4"
               }
             }
           ],
@@ -6296,19 +6248,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DeliverableDetails.Icon4.TabIndex"
+                  "fullyQualifiedName": "'Deliverable Details'.Icon4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DeliverableDetails.Icon4.TabIndex",
+                  "fullyQualifiedName": "'Deliverable Details'.Icon4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "DeliverableDetails",
-                "type": "DeliverableDetails.Icon4"
+                "module": "Deliverable Details",
+                "type": "'Deliverable Details'.Icon4"
               }
             }
           ],
@@ -6326,19 +6278,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DeliverableDetails.DeliverableDetailsTaskGallery.AccessibleLabel"
+                  "fullyQualifiedName": "'Deliverable Details'.DeliverableDetailsTaskGallery.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DeliverableDetails.DeliverableDetailsTaskGallery.AccessibleLabel",
+                  "fullyQualifiedName": "'Deliverable Details'.DeliverableDetailsTaskGallery.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "DeliverableDetails",
-                "type": "DeliverableDetails.DeliverableDetailsTaskGallery"
+                "module": "Deliverable Details",
+                "type": "'Deliverable Details'.DeliverableDetailsTaskGallery"
               }
             }
           ],
@@ -6356,19 +6308,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DeliverableDetails.DeliverableDetailsTaskGallery.TabIndex"
+                  "fullyQualifiedName": "'Deliverable Details'.DeliverableDetailsTaskGallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DeliverableDetails.DeliverableDetailsTaskGallery.TabIndex",
+                  "fullyQualifiedName": "'Deliverable Details'.DeliverableDetailsTaskGallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "DeliverableDetails",
-                "type": "DeliverableDetails.DeliverableDetailsTaskGallery"
+                "module": "Deliverable Details",
+                "type": "'Deliverable Details'.DeliverableDetailsTaskGallery"
               }
             }
           ],
@@ -6386,19 +6338,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DeliverableDetails.DeliverableDetailsTaskGallery.NextArrow5_1.TabIndex"
+                  "fullyQualifiedName": "'Deliverable Details'.DeliverableDetailsTaskGallery.NextArrow5_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DeliverableDetails.DeliverableDetailsTaskGallery.NextArrow5_1.TabIndex",
+                  "fullyQualifiedName": "'Deliverable Details'.DeliverableDetailsTaskGallery.NextArrow5_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "DeliverableDetails",
-                "type": "DeliverableDetails.DeliverableDetailsTaskGallery.NextArrow5_1"
+                "module": "Deliverable Details",
+                "type": "'Deliverable Details'.DeliverableDetailsTaskGallery.NextArrow5_1"
               }
             }
           ],
