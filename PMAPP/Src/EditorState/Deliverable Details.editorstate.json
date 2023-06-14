@@ -68,7 +68,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AddTaskIcon",
-      "ParentIndex": 0,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4715,7 +4715,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "DelivDetailForm",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4873,7 +4873,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DelivDetailsBack",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5074,7 +5074,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DelivDetailsEditIcon",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5231,7 +5231,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DelivDetailsHeader",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5389,7 +5389,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DelivDetailsLabel",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5884,7 +5884,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DelivDetailsSeperator",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6040,7 +6040,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DelivDetailsSyncIcon",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6942,7 +6942,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
       "Name": "NextArrow5_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7962,7 +7962,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "Title6_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

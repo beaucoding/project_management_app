@@ -3250,7 +3250,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DELIV_REF_DataCard4",
-      "ParentIndex": 0,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3384,7 +3384,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "END BY_DataCard1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3518,7 +3518,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "START BY_DataCard1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3720,7 +3720,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TASK_DESCRIPTION_DataCard1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3854,7 +3854,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TASK_NAME_DataCard2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5256,7 +5256,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "UNIT_QUANTITY_DataCard1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
