@@ -894,7 +894,7 @@
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_unit_quantity"
-            Default: =ThisItem.UNIT_QUANTITY
+            Default: =ThisItem.cr8aa_unit_quantity
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_unit_quantity")
             Fill: =RGBA(0, 0, 0, 0)

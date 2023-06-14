@@ -10,6 +10,9 @@
     "Name": "Materials",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr8aa_cr8aa_elements_ELEM_MAT1_LOOKUP_cr8aa_mat": "Elements (cr8aa_cr8aa_elements_ELEM_MAT1_LOOKUP_cr8aa_mat)",
+      "cr8aa_cr8aa_elements_ELEM_MAT2_LOOKUP_cr8aa_mat": "Elements (cr8aa_cr8aa_elements_ELEM_MAT2_LOOKUP_cr8aa_mat)",
+      "cr8aa_cr8aa_elements_ELEM_MAT3_LOOKUP_cr8aa_mat": "Elements (cr8aa_cr8aa_elements_ELEM_MAT3_LOOKUP_cr8aa_mat)",
       "cr8aa_mat_key": "MAT_KEY",
       "cr8aa_mat_type": "MAT_TYPE",
       "cr8aa_mat_unitcost": "MAT_UNITCOST",
@@ -18,6 +21,7 @@
       "cr8aa_materials_DuplicateBaseRecord": "Duplicate Records (cr8aa_materials_DuplicateBaseRecord)",
       "cr8aa_materials_DuplicateMatchingRecord": "Duplicate Records (cr8aa_materials_DuplicateMatchingRecord)",
       "cr8aa_materials_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8aa_Materials_Material1Lookup_cr8aa_Ele": "Elements (cr8aa_Materials_Material1Lookup_cr8aa_Ele)",
       "cr8aa_materials_PrincipalObjectAttributeAccesses": "Field Sharing",
       "cr8aa_materials_ProcessSession": "Process Sessions",
       "cr8aa_materials_SyncErrors": "Sync Errors",

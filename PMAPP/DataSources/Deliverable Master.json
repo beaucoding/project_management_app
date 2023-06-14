@@ -12,6 +12,7 @@
       "_ownerid_value": "Owner",
       "cr8aa_deliv_desc": "DELIV_DESC",
       "cr8aa_deliv_key": "DELIV_KEY",
+      "cr8aa_deliv_total": "DELIV_TOTAL",
       "cr8aa_deliv_value": "DELIV_VALUE",
       "cr8aa_deliverablemaster_AsyncOperations": "System Jobs",
       "cr8aa_deliverablemaster_BulkDeleteFailures": "Bulk Delete Failures",
