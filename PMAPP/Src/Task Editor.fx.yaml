@@ -10,24 +10,25 @@
         Y: =100
         ZIndex: =1
 
-        DELIV_REF_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-            AllowedValues: =Distinct(Filter('Deliverable Master', DELIV_REF = PROJ_KEY), DELIV_NAME)
+        DELIV_REF_DataCard3 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr8aa_deliv_ref"
-            Default: =ThisItem.DELIV_REF
+            Default: =ProjectDetailsDeliverableGallery.Selected.DELIV_KEY
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Task Master'],DataSourceInfo.DisplayName,"cr8aa_deliv_ref")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@'Task Master'], DataSourceInfo.MaxLength, "cr8aa_deliv_ref")
             Required: =false
-            Update: =DataCardValue15.Selected.Value
+            Update: =DataCardValue20.Text
+            Visible: =false
             Width: =640
             X: =0
-            Y: =6
+            Y: =7
             ZIndex: =1
 
-            DataCardKey14 As label:
+            DataCardKey15 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -48,42 +49,39 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue15 As dropdown:
+            DataCardValue20 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(255, 255, 255, 1)
-                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                ChevronFill: =RGBA(33, 33, 33, 1)
-                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
                 Default: =Parent.Default
+                DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =70
                 HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
-                HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =Parent.AllowedValues
-                PaddingBottom: =5
-                PaddingLeft: =12
-                PaddingRight: =5
-                PaddingTop: =5
-                PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(73, 130, 5, 1)
-                SelectionFill: =RGBA(73, 130, 5, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(73, 130, 5, 1)
+                PressedColor: =RGBA(51, 51, 51, 1)
+                PressedFill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                 ZIndex: =2
 
-            ErrorMessage14 As label:
+            ErrorMessage27 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -105,10 +103,10 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue15.Y + DataCardValue15.Height
+                Y: =DataCardValue20.Y + DataCardValue20.Height
                 ZIndex: =3
 
-            StarVisible14 As label:
+            StarVisible27 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -119,14 +117,14 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey14.Height
+                Height: =DataCardKey15.Height
                 PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey14.Y
+                Y: =DataCardKey15.Y
                 ZIndex: =4
 
         DIFFICULTY_DataCard1 As typedDataCard.comboBoxOptionSetSingleEditCard:
@@ -159,7 +157,7 @@
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Difficulty"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -787,7 +785,7 @@
             Update: =DataCardValue44.Text
             Width: =640
             X: =0
-            Y: =7
+            Y: =6
             ZIndex: =1
 
             DataCardKey42 As label:
@@ -804,7 +802,7 @@
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Description"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -920,7 +918,7 @@
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Units"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1036,7 +1034,7 @@
                 Height: =48
                 PaddingLeft: =0
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Task Title"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
