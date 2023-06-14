@@ -341,7 +341,7 @@
         Width: =Parent.Width
         ZIndex: =2
 
-    DelivDetailsLabel_1 As label:
+    TaskDetailsLabel As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -358,7 +358,7 @@
         Y: =9
         ZIndex: =3
 
-    DelivDetailsBack_1 As icon.ChevronLeft:
+    TaskDetailsBackIcon As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
         BorderColor: =RGBA(95, 133, 57, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -377,7 +377,7 @@
         Width: =88
         ZIndex: =4
 
-    Rectangle3_4 As rectangle:
+    TaskDetailsSeperator As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledFill: =RGBA(166, 166, 166, 1)
@@ -390,7 +390,7 @@
         Y: =88
         ZIndex: =5
 
-    ProjectDetailsSyncIcon_2 As icon.Sync:
+    TaskDetailsSyncIcon As icon.Sync:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -410,7 +410,7 @@
         Y: =12
         ZIndex: =6
 
-    ProjectDetailsEditIcon_2 As icon.Edit:
+    TaskDetailsEditIcon As icon.Edit:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)

@@ -2,14 +2,6 @@
     Fill: =RGBA(73, 130, 5, 1)
     LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
-    ProjectMasterHeader_1 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(247, 247, 247, 1)
-        Height: =80
-        Width: =Parent.Width
-        Y: =98
-        ZIndex: =1
-
     "ProjectGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
@@ -22,7 +14,7 @@
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         Y: =183
-        ZIndex: =2
+        ZIndex: =1
 
         ProjectGalleryName As label:
             Color: =RGBA(0, 94, 146, 1)
@@ -172,6 +164,14 @@
         Width: =560
         X: =66
         Y: =110
+        ZIndex: =2
+
+    ProjectMasterSearchRect As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(247, 247, 247, 1)
+        Height: =80
+        Width: =Parent.Width
+        Y: =98
         ZIndex: =3
 
     ProjectMasterHeader As rectangle:
@@ -284,7 +284,7 @@
         Y: =12
         ZIndex: =10
 
-    Rectangle3_1 As rectangle:
+    ProjectMasterSeperator As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledFill: =RGBA(166, 166, 166, 1)

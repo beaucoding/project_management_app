@@ -5588,19 +5588,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Task Editor'.TaskForm.ELEMENT_REF_DataCard1.DataCardValue27.AccessibleLabel"
+                  "fullyQualifiedName": "'Task Editor'.TaskForm.ELEMENT_REF_DataCard2.DataCardValue34.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Task Editor'.TaskForm.ELEMENT_REF_DataCard1.DataCardValue27.AccessibleLabel",
+                  "fullyQualifiedName": "'Task Editor'.TaskForm.ELEMENT_REF_DataCard2.DataCardValue34.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Task Editor",
-                "type": "'Task Editor'.TaskForm.ELEMENT_REF_DataCard1.DataCardValue27"
+                "type": "'Task Editor'.TaskForm.ELEMENT_REF_DataCard2.DataCardValue34"
               }
             }
           ],
@@ -5858,19 +5858,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Task Details'.TaskDetailsEditIcon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Task Details'.TaskDetailsEditIcon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Task Details",
-                "type": "'Task Details'.ProjectDetailsEditIcon_2"
+                "type": "'Task Details'.TaskDetailsEditIcon"
               }
             }
           ],
@@ -5888,19 +5888,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.TabIndex"
+                  "fullyQualifiedName": "'Task Details'.TaskDetailsEditIcon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Task Details'.ProjectDetailsEditIcon_2.TabIndex",
+                  "fullyQualifiedName": "'Task Details'.TaskDetailsEditIcon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Task Details",
-                "type": "'Task Details'.ProjectDetailsEditIcon_2"
+                "type": "'Task Details'.TaskDetailsEditIcon"
               }
             }
           ],
@@ -6278,19 +6278,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Deliverable Details'.Icon4.AccessibleLabel"
+                  "fullyQualifiedName": "'Deliverable Details'.AddTaskIcon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Deliverable Details'.Icon4.AccessibleLabel",
+                  "fullyQualifiedName": "'Deliverable Details'.AddTaskIcon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Deliverable Details",
-                "type": "'Deliverable Details'.Icon4"
+                "type": "'Deliverable Details'.AddTaskIcon"
               }
             }
           ],
@@ -6308,19 +6308,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Deliverable Details'.Icon4.TabIndex"
+                  "fullyQualifiedName": "'Deliverable Details'.AddTaskIcon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Deliverable Details'.Icon4.TabIndex",
+                  "fullyQualifiedName": "'Deliverable Details'.AddTaskIcon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Deliverable Details",
-                "type": "'Deliverable Details'.Icon4"
+                "type": "'Deliverable Details'.AddTaskIcon"
               }
             }
           ],
