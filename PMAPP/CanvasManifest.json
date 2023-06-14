@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 21,
+    "BindingErrorCount": 8,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -138,6 +138,7 @@
     "Project Details",
     "DeliverableDetails",
     "TaskDetails",
+    "Task Editor",
     "EquipmentMaster",
     "EquipmentDetails",
     "EquipmentEditor",

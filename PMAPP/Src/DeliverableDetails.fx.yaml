@@ -431,7 +431,7 @@ DeliverableDetails As screen:
         DelayItemLoading: =true
         Fill: =RGBA(237, 237, 237, 1)
         Height: =414
-        Items: =Filter('Task Master',DELIV_REF =  ProjectDetailsDeliverableGallery.Selected.DELIV_KEY)
+        Items: =Filter('Task Master', DELIV_REF =  ProjectDetailsDeliverableGallery.Selected.DELIV_KEY)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -641,4 +641,25 @@ DeliverableDetails As screen:
         X: =485
         Y: =12
         ZIndex: =10
+
+    Icon4 As icon.Add:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(73, 130, 5, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =44
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Add
+        OnSelect: =EditForm(TaskForm); Navigate('Task Editor');
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =44
+        X: =596
+        Y: =670
+        ZIndex: =11
 

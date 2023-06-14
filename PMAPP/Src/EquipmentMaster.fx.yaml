@@ -18,7 +18,7 @@ EquipmentMaster As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Height: =815
-        Items: =SortByColumns(Search(Equipment, EQsearch.Text, "cr8aa_name","cr8aa_brand"), "cr8aa_name", SortOrder.Descending)
+        Items: =SortByColumns(Search(Equipment, EQsearch.Text, "cr8aa_name"), "cr8aa_name", SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =true
@@ -76,7 +76,7 @@ EquipmentMaster As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =18
-            Text: =ThisItem.cr8aa_brand
+            Text: =ThisItem.EQ_FUEL
             VerticalAlign: =VerticalAlign.Top
             Width: =EQGalleryName.Width
             X: =EQGalleryName.X
