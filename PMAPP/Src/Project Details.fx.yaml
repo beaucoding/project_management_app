@@ -805,7 +805,7 @@
         Y: =256
         ZIndex: =20
 
-    Label4 As label:
+    ProjectTotalExpense As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -814,11 +814,57 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =119
+        Height: =106
         Size: =21
-        Text: =Concatenate("$",Sum(Filter('Deliverable Master', PROJECT_REF =  ProjectGallery.Selected.PROJ_KEY),DELIV_VALUE))
-        Width: =223
-        X: =361
-        Y: =482
+        Text: =Concatenate("$",Sum(Filter('Task Master', PROJECT_LOOKUP.PROJ_KEY =  ProjectGallery.Selected.PROJ_KEY),TASK_LABOR_TOTAL)+Sum(Filter('Task Master', PROJECT_LOOKUP.PROJ_KEY = ProjectGallery.Selected.PROJ_KEY),TASK_MATERIAL_COST))
+        Width: =93
+        X: =373
+        Y: =468
         ZIndex: =21
+
+    ProjectLaborExpense As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =106
+        Size: =21
+        Text: |-
+            =//this function takes the sum of all task's associated with this project's total labor cost and concatenates it with the dollar sign for Maximum Aesthetic
+            
+            Concatenate(
+                "$",
+                Sum(
+                    Filter(
+                        'Task Master',
+                        PROJECT_LOOKUP.PROJ_KEY = ProjectGallery.Selected.PROJ_KEY
+                    ),
+                    TASK_LABOR_TOTAL
+                )
+            )
+        Width: =93
+        X: =341
+        Y: =574
+        ZIndex: =22
+
+    ProjectMaterialsExpense As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =106
+        Size: =21
+        Text: =Concatenate("$",Sum(Filter('Task Master', PROJECT_LOOKUP.PROJ_KEY = ProjectGallery.Selected.PROJ_KEY),TASK_MATERIAL_COST))
+        Width: =93
+        X: =434
+        Y: =574
+        ZIndex: =23
 
